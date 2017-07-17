@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 llll
 aaaa
 Áõç÷
@@ -8,3 +9,6 @@ bbbb
 Áõç÷
 zhouke
 cml
+=======
+ĞŞ¸Ä³åÍ»123123
+>>>>>>> master
