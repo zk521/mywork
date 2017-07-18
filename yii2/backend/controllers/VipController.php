@@ -20,6 +20,19 @@ class VipController extends controller
 		$leverdata = $db->createCommand($sql)->queryAll();
 		return $this->renderPartial('vipadd',['leverdata'=>$leverdata]);
 	}
+	//添加页面接值入库
+	public function actionAdddata(){
+		$data = yii::$app->request->get();
+		$time = date('Y-m-d',time());
+		$sql = "insert into vip values(null,'$data[email]','$data[lever]','$time','等级积分','$time','最后登录','最后修改','最后ip','$data[parent_id]','$data[alias]','qq','$data[mobile_phone]','$data[is_validated]','最大消费')";
+		$db = yii::$app->db;
+		$lever = $db->createCommand($sql)->execute();
+		if ($lever) {
+			echo 1;
+		}else{
+			echo 2;
+		}
+	}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	//会员级别添加展示
