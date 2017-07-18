@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2017-07-18 14:10:02 [127.0.0.1][-][ii1kfqfuhg58jgbi575dp3q136][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index\index".' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php:532
 Stack trace:
 #0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index\\index', Array)
@@ -26,6 +27,8 @@ $_COOKIE = [
 AG(
 Ç3]TRÑz8~¥n²\";}'
 =======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 2017-07-18 16:27:37 [::1][-][um2kk2964rkol8dc1b4l8p8d75][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php:1032
 Stack trace:
 #0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
@@ -72,8 +75,18 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
+=======
+=======
+2017-07-18 14:10:02 [127.0.0.1][-][ii1kfqfuhg58jgbi575dp3q136][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index\index".' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index\\index', Array)
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 
 $_SESSION = [
     '__flash' => []
@@ -143,7 +156,16 @@ $_COOKIE = [
     '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
 AG(
 Ç3]TRÑz8~¥n²\";}'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -214,12 +236,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -285,7 +311,16 @@ $_COOKIE = [
     '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
 AG(
 Ç3]TRÑz8~¥n²\";}'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -354,12 +389,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -425,7 +464,16 @@ $_COOKIE = [
     '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
 AG(
 Ç3]TRÑz8~¥n²\";}'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -497,12 +545,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -569,7 +621,16 @@ $_COOKIE = [
     '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
 AG(
 Ç3]TRÑz8~¥n²\";}'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -641,12 +702,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -712,7 +777,16 @@ $_COOKIE = [
     '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
 AG(
 Ç3]TRÑz8~¥n²\";}'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -784,12 +858,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -852,7 +930,16 @@ $_COOKIE = [
     '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
 AG(
 Ç3]TRÑz8~¥n²\";}'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -924,12 +1011,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -1017,10 +1108,19 @@ $_COOKIE = [
     '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
 AG(
 Ç3]TRÑz8~¥n²\";}'
+<<<<<<< HEAD
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -1092,12 +1192,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -1188,11 +1292,20 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/gitshop/yii2/backend/web/'
+=======
+<<<<<<< HEAD
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 ]
 
 $_SERVER = [
@@ -1435,6 +1548,474 @@ $_COOKIE = [
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2392'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=rate/addsql'
+    'QUERY_STRING' => 'r=rate/addsql'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52845'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=um2kk2964rkol8dc1b4l8p8d75; _csrf-backend=b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8DR%91%F9S%AD%25%DB6%C4%FDE%A4%27%04t%9C%3C%B0%01%9F%EA%1B%09%94Uy%8Cw%D3D%91%22%3B%7D'
+    'CONTENT_LENGTH' => '10'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/index.php?r=rate/add'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500370815.9281
+    'REQUEST_TIME' => 1500370815
+]
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reta' in F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\RateController.php:41
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][info][application] $_GET = [
+    'r' => 'rate/addsql'
+]
+
+$_POST = [
+    'rate' => '2,3'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
+    '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2392'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=rate/addsql'
+    'QUERY_STRING' => 'r=rate/addsql'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52846'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=um2kk2964rkol8dc1b4l8p8d75; _csrf-backend=b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8DR%91%F9S%AD%25%DB6%C4%FDE%A4%27%04t%9C%3C%B0%01%9F%EA%1B%09%94Uy%8Cw%D3D%91%22%3B%7D'
+    'CONTENT_LENGTH' => '10'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/index.php?r=rate/add'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500370816.246
+    'REQUEST_TIME' => 1500370816
+]
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reta' in F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\RateController.php:41
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][info][application] $_GET = [
+    'r' => 'rate/addsql'
+]
+
+$_POST = [
+    'rate' => '2,3'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
+    '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2392'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=rate/addsql'
+    'QUERY_STRING' => 'r=rate/addsql'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52847'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=um2kk2964rkol8dc1b4l8p8d75; _csrf-backend=b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8DR%91%F9S%AD%25%DB6%C4%FDE%A4%27%04t%9C%3C%B0%01%9F%EA%1B%09%94Uy%8Cw%D3D%91%22%3B%7D'
+    'CONTENT_LENGTH' => '10'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/index.php?r=rate/add'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500370816.4127
+    'REQUEST_TIME' => 1500370816
+]
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reta' in F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\RateController.php:41
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][info][application] $_GET = [
+    'r' => 'rate/addsql'
+]
+
+$_POST = [
+    'rate' => '2,3'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
+    '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2392'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=rate/addsql'
+    'QUERY_STRING' => 'r=rate/addsql'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52848'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=um2kk2964rkol8dc1b4l8p8d75; _csrf-backend=b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8DR%91%F9S%AD%25%DB6%C4%FDE%A4%27%04t%9C%3C%B0%01%9F%EA%1B%09%94Uy%8Cw%D3D%91%22%3B%7D'
+    'CONTENT_LENGTH' => '10'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/index.php?r=rate/add'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500370816.5827
+    'REQUEST_TIME' => 1500370816
+]
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reta' in F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\RateController.php:41
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][info][application] $_GET = [
+    'r' => 'rate/addsql'
+]
+
+$_POST = [
+    'rate' => '2,3'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
+    '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+=======
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/rankadd'
+    'HTTP_COOKIE' => 'PHPSESSID=ndr1i2mlvsbcll3fhkma88rkc1; _csrf=b1296113484b4b070aee3803389df0922e8539a324deb55f4aa711bae63b1bc9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22DcL6W_YWsbT_UcoE8mlQujHzK1dT6b-C%22%3B%7D; advanced-backend=ii1kfqfuhg58jgbi575dp3q136; _csrf-backend=047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%2A%A4%C8%8E%DE%D2%96J%02%0AAG%28%0A%1C%C73%5D%0CTR%8E%81%D1z8%7E%10%1E%A5n%B2%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '57824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/ranklever&lever=%E9%87%91%E9%92%BB'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/ranklever&lever=%E9%87%91%E9%92%BB'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500366330.544
+    'REQUEST_TIME' => 1500366330
+]
+2017-07-18 16:25:35 [127.0.0.1][-][ii1kfqfuhg58jgbi575dp3q136][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php(30): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\VipController->actionRanklever()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ranklever', Array)
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('vip/ranklever', Array)
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+The SQL being executed was: insert into viprank values(null,'é‡‘é’»')' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'insert into vip...')
+#1 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php(30): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\VipController->actionRanklever()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('ranklever', Array)
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('vip/ranklever', Array)
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 21S01
+    [1] => 1136
+    [2] => Column count doesn't match value count at row 1
+)
+
+2017-07-18 16:25:35 [127.0.0.1][-][ii1kfqfuhg58jgbi575dp3q136][info][application] $_GET = [
+    'r' => 'vip/ranklever'
+    'lever' => 'é‡‘é’»'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'ndr1i2mlvsbcll3fhkma88rkc1'
+    '_csrf' => 'b1296113484b4b070aee3803389df0922e8539a324deb55f4aa711bae63b1bc9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DcL6W_YWsbT_UcoE8mlQujHzK1dT6b-C\";}'
+    'advanced-backend' => 'ii1kfqfuhg58jgbi575dp3q136'
+    '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
+AG(
+Ç3]TRÑz8~¥n²\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2392'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=rate/addsql'
+    'QUERY_STRING' => 'r=rate/addsql'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52849'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=um2kk2964rkol8dc1b4l8p8d75; _csrf-backend=b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8DR%91%F9S%AD%25%DB6%C4%FDE%A4%27%04t%9C%3C%B0%01%9F%EA%1B%09%94Uy%8Cw%D3D%91%22%3B%7D'
+    'CONTENT_LENGTH' => '10'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/index.php?r=rate/add'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500370816.7314
+    'REQUEST_TIME' => 1500370816
+]
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reta' in F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\RateController.php:41
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-18 17:40:16 [::1][-][um2kk2964rkol8dc1b4l8p8d75][info][application] $_GET = [
+    'r' => 'rate/addsql'
+]
+
+$_POST = [
+    'rate' => '2,3'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
+    '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -1525,7 +2106,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -1597,12 +2187,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -1693,7 +2287,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -1765,12 +2368,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -1861,7 +2468,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -1933,12 +2549,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -2029,7 +2649,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -2101,12 +2730,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -2197,6 +2830,7 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
@@ -2344,10 +2978,17 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -2419,11 +3060,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 ]
 
 $_SESSION = [
     '__flash' => []
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
+=======
+=======
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 ]
 
 $_SERVER = [
@@ -2489,15 +3135,32 @@ $_POST = [
 ]
 
 $_COOKIE = [
+<<<<<<< HEAD
     '_ga' => 'GA1.1.355970500.1496455169'
     'pgv_pvi' => '1001204736'
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+=======
+    'PHPSESSID' => 'ndr1i2mlvsbcll3fhkma88rkc1'
+    '_csrf' => 'b1296113484b4b070aee3803389df0922e8539a324deb55f4aa711bae63b1bc9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DcL6W_YWsbT_UcoE8mlQujHzK1dT6b-C\";}'
+    'advanced-backend' => 'ii1kfqfuhg58jgbi575dp3q136'
+    '_csrf-backend' => '047c38e99c42c810a982cc1364750fa791acdd8e26ae2be243def85ffbd3afe0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"*¤ÈŞÒ–J
+AG(
+Ç3]TRÑz8~¥n²\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -2569,12 +3232,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -2641,7 +3308,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -2713,12 +3389,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -2809,7 +3489,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -2881,12 +3570,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -2952,7 +3645,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -3024,12 +3726,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -3099,7 +3805,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -3171,12 +3886,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -3246,7 +3965,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -3318,12 +4046,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -3393,7 +4125,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -3465,12 +4206,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -3542,7 +4287,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -3614,12 +4368,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -3693,7 +4451,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -3765,12 +4532,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -3844,7 +4615,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -3916,12 +4696,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -3995,7 +4779,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -4067,12 +4860,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -4146,7 +4943,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -4218,12 +5024,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -4297,7 +5107,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -4369,12 +5188,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -4448,7 +5271,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -4520,12 +5352,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -4744,6 +5580,7 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
@@ -4816,10 +5653,17 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -4891,12 +5735,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -4966,7 +5814,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -5038,12 +5895,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -5139,7 +6000,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -5211,12 +6081,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -5288,7 +6162,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -5360,12 +6243,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -5461,7 +6348,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -5533,12 +6429,16 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 >>>>>>> 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 <<<<<<< HEAD
+=======
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -5634,7 +6534,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -5702,12 +6611,17 @@ $_COOKIE = [
     'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
     'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
     '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+<<<<<<< HEAD
 2ef3eca9a8ece5c58c2d89be3eb34cb74dd8bb08
 ]
 
 $_SESSION = [
     '__flash' => []
 
+=======
+    'ci_session' => '70bd02c08ede0dadb60f372bef439d88227b3813'
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -5803,7 +6717,16 @@ AG(
     'mindsparktb_206720000' => 'true'
     'mindsparktbsupport_206720000' => 'true'
     'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+<<<<<<< HEAD
 
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+
+$_SESSION = [
+    '__flash' => []
+<<<<<<< HEAD
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -5846,6 +6769,7 @@ $_SERVER = [
     'HTTP_HOST' => 'localhost'
     'FCGI_ROLE' => 'RESPONDER'
     'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+<<<<<<< HEAD
     'REQUEST_TIME_FLOAT' => 1500375940.7323
     'REQUEST_TIME' => 1500375940
 ]
@@ -5879,6 +6803,11 @@ $_COOKIE = [
 $_SESSION = [
     '__flash' => []
 
+=======
+    'REQUEST_TIME_FLOAT' => 1500379845.852
+    'REQUEST_TIME' => 1500379845
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/gitshop/yii2/backend/web/'
 ]
 
@@ -5919,7 +6848,39 @@ $_SERVER = [
     'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1500381222.986
     'REQUEST_TIME' => 1500381222
+<<<<<<< HEAD
 
+=======
+>>>>>>> b534996554f6b647d0682daf116de175c2b36506
+]
+2017-07-18 20:47:22 [::1][-][um2kk2964rkol8dc1b4l8p8d75][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "vip/index".' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('vip/index', Array)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-18 20:47:22 [::1][-][um2kk2964rkol8dc1b4l8p8d75][info][application] $_GET = [
+    'r' => 'vip/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'um2kk2964rkol8dc1b4l8p8d75'
+    '_csrf-backend' => 'b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"R‘ùS­%Û6ÄıE¤\'tœ<°Ÿê	”UyŒwÓD‘\";}'
+    'ci_session' => '70bd02c08ede0dadb60f372bef439d88227b3813'
+]
+
+$_SESSION = [
+    '__flash' => []
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     '__returnUrl' => '/big1/xm/yii2/backend/web/'
 ]
 
@@ -5931,6 +6892,7 @@ $_SERVER = [
     'WINDIR' => 'C:\\Windows'
     'PHP_FCGI_MAX_REQUESTS' => '1000'
     'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+<<<<<<< HEAD
     '_FCGI_SHUTDOWN_EVENT_' => '2612'
     'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
     'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=rate/lis'
@@ -5939,6 +6901,16 @@ $_SERVER = [
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'REMOTE_PORT' => '57307'
+=======
+    '_FCGI_SHUTDOWN_EVENT_' => '2676'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=vip/index'
+    'QUERY_STRING' => 'r=vip/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59185'
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
     'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
     'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
@@ -5955,7 +6927,10 @@ $_SERVER = [
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_CONNECTION' => 'close'
     'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=um2kk2964rkol8dc1b4l8p8d75; _csrf-backend=b4ec8c1acb53517c0efc2552b0b732dd5e8d1ac375458fedb642b3c6b2915db6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8DR%91%F9S%AD%25%DB6%C4%FDE%A4%27%04t%9C%3C%B0%01%9F%EA%1B%09%94Uy%8Cw%D3D%91%22%3B%7D; ci_session=70bd02c08ede0dadb60f372bef439d88227b3813'
+<<<<<<< HEAD
     'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/index.php?r=rate/add'
+=======
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
     'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
@@ -5963,7 +6938,12 @@ $_SERVER = [
     'HTTP_HOST' => 'localhost'
     'FCGI_ROLE' => 'RESPONDER'
     'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+<<<<<<< HEAD
     'REQUEST_TIME_FLOAT' => 1500379845.852
     'REQUEST_TIME' => 1500379845
 
+=======
+    'REQUEST_TIME_FLOAT' => 1500382042.6124
+    'REQUEST_TIME' => 1500382042
+>>>>>>> 09623cda14b7bb48964c1e4fd12107b82494bd7e
 ]
