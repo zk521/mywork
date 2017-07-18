@@ -22,8 +22,9 @@
 				</div>
 				<div class="baBody">
 					<div class="bbD">
-						会员名称：<input type="text" class="input3" />
+						会员名称：<input type="text" class="input3" id="rand_name" />
 					</div>
+					<span id="result"></span>
 					<div class="bbD">
 						<p class="bbDP">
 							<button class="btn_ok btn_yes" href="#" id="submit">提交</button>
@@ -38,4 +39,19 @@
 	</div>
 </body>
 </html>
-<script></script>
+<script>
+	$('#submit').click(function(){
+		var lever = $("#rand_name").val();
+		$.ajax({
+			url:"?r=vip/ranklever",
+			data:{lever:lever},
+			success:function(msg){
+				if (msg == 1) {
+					$("#result").html("添加成功");
+				}else{
+					$("#result").html("添加失败");
+				}
+			}
+		})
+	})
+</script>

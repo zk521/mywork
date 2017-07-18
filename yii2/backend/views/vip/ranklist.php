@@ -36,46 +36,34 @@ $(function (){
 		<div class="page">
 			<!-- vip页面样式 -->
 			<div class="vip">
-				<div class="conform">
-					<form>
-						<div class="cfD">
-							时间段：<input class="vinput mh_date" type="text" readonly="true" />&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
-							<input class="vinput mh_date" type="text" readonly="true" />
-						</div>
-					</form>
-				</div>
 				<!-- vip 表格 显示 -->
 				<div class="conShow">
 					<table border="1" cellspacing="0" cellpadding="0">
 						<tr>
 							<td width="66px" class="tdColor tdC">序号</td>
 							<td width="250px" class="tdColor">级别</td>
-							<td width="188px" class="tdColor">添加姓名</td>
-							<td width="282px" class="tdColor">添加时间</td>
-							<td width="282px" class="tdColor">级别权限</td>
+							<td width="282px" class="tdColor">级别内容</td>
 							<td width="130px" class="tdColor">操作</td>
 						</tr>
+			<?php foreach ($leverdata as $key => $val): ?>
 						<tr>
-							<td>1</td>
-							<td>
-								<div class="onsImg onsImgv">
-									<img src="img/banimg.png">
-								</div>
-							</td>
-							<td>山下就只</td>
-							<td>总监</td>
+							<td><?=$val['rank_id']?></td>
+							<td><?=$val['rank_name']?></td>
 							<td>1.免运费
 								2.打折
 							</td>
 							<td>
-								<a href="connoisseuradd.html">
+								<a href="index.php?r=vip/del&id=<?=$val['rank_id']?>">
 									<img class="operation" src="img/update.png">
 								</a> 
-								<img class="operation delban" src="img/delete.png">
+								<!-- <a href="index.php?r=vip/del&id=<?=$val['rank_id']?>"> -->
+									<img class="operation delban" src="img/delete.png">
+								<!-- </a> -->
 							</td>
 						</tr>
+			<?php endforeach;?>
 					</table>
-					<div class="paging">此处是分页</div>
+					<div class="paging">jibie</div>
 				</div>
 				<!-- vip 表格 显示 end-->
 			</div>
@@ -93,7 +81,7 @@ $(function (){
 			</div>
 			<p class="delP1">你确定要删除此条记录吗？</p>
 			<p class="delP2">
-				<a href="#" class="ok yes">确定</a><a class="ok no">取消</a>
+				<a href="index.php?r=vip/del&id=<?=$val['rank_id']?>" class="ok yes">确定</a><a class="ok no">取消</a>
 			</p>
 		</div>
 	</div>

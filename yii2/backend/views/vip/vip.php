@@ -55,14 +55,15 @@ $(function (){
 					<table border="1" cellspacing="0" cellpadding="0">
 						<tr>
 							<td width="66px" class="tdColor tdC">序号</td>
-							<td width="250px" class="tdColor">头像</td>
 							<td width="188px" class="tdColor">姓名</td>
-							<td width="235px" class="tdColor">手机号码</td>
-							<td width="220px" class="tdColor">所在城市</td>
-							<td width="290px" class="tdColor">会员余额</td>
+							<td width="250px" class="tdColor">email</td>
+							<td width="235px" class="tdColor">会员等级</td>
+							<td width="220px" class="tdColor">消费积分</td>
 							<td width="282px" class="tdColor">注册时间</td>
+							<td width="290px" class="tdColor">最后一次登录时间</td>
 							<td width="130px" class="tdColor">操作</td>
 						</tr>
+
 						<tr>
 							<td>1</td>
 							<td><div class="onsImg onsImgv">
@@ -78,6 +79,7 @@ $(function (){
 									src="img/update.png"></a> <img class="operation delban"
 								src="img/delete.png"></td>
 						</tr>
+						
 					</table>
 					<div class="paging">此处是分页</div>
 				</div>

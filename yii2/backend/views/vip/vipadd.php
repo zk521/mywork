@@ -18,38 +18,25 @@
 			<!-- 上传广告页面样式 -->
 			<div class="banneradd bor">
 				<div class="baTopNo">
-					<span>会员编辑</span>
+					<span>会员姓名</span>
 				</div>
 				<div class="baBody">
 					<div class="bbD">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;头像：
-						<div class="vipHead">
-							<img src="img/userPICS.png" />
-							<p class="vipP">更换头像</p>
-							<input class="file1" type="file" enctype='multipart/form-data'/>
-						</div>
+						会员邮箱：<input type="text" class="input3" />
 					</div>
 					<div class="bbD">
-						会员名称：<input type="text" class="input3" />
+						会员昵称：<input type="text" class="input3" />
 					</div>
 					<div class="bbD">
-						手机号码：<input type="text" class="input3" />
+						移动电话：<input class="input3" type="text" />
 					</div>
 					<div class="bbD">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;余额：&nbsp;&nbsp;&nbsp;0.00元</div>
-					<div class="bbD">
-						所在城市：<input class="input3" type="text" />
+						会员等级：	<select class="input3">
+								<?php foreach ($leverdata as $key => $val): ?>
+										<option><?=$val['rank_name']?></option>
+								<?php endforeach;?>
+									</select>
 					</div>
-					<div class="bbD">
-						工作年限：<select class="input3"><option>1年以内</option></select>
-					</div>
-					<div class="bbD">
-						工作年限：
-						<div class="btext">
-							<textarea class="text1"></textarea>
-						</div>
-					</div>
-
 					<div class="bbD">
 						<p class="bbDP">
 							<button class="btn_ok btn_yes" href="#">提交</button>
