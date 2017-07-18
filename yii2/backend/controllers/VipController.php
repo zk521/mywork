@@ -10,7 +10,10 @@ class VipController extends controller
 {
 	//vip会员页面展示
 	public function actionIndex(){
-		return $this->renderPartial('vip.php');
+		$db = yii::$app->db;
+		$sql = "select * from vip";
+		$data = $db->createCommand($sql)->queryAll();
+		return $this->renderPartial('vip.php',['data'=>$data]);
 	}
 	//vip会员添加展示
 	public function actionAdd(){
