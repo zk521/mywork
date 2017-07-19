@@ -59,7 +59,7 @@ class VipController extends controller
 		$update = $db->createCommand($sql)->queryAll();
 		$sql = "select * from viprank";
 		$leverdata = $db->createCommand($sql)->queryAll();
-		return $this->renderPartial('updatevip',['update'=>$update,'leverdata'=>$leverdata]);
+		return $this->renderPartial('updatelist',['update'=>$update,'leverdata'=>$leverdata]);
 	}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	//会员级别添加展示
