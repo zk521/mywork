@@ -69,4 +69,26 @@ class RateController extends Controller
 			}
 		}
 	}
+
+	// 删除
+	public function actionDel()
+	{
+		$truncate = yii::$app->db->createCommand("TRUNCATE rate")->execute();
+		if($truncate == 0) {
+			echo 1;
+		}
+	}
+
+	//修改
+	public function actionUpde()
+	{
+		//接收值和r_id
+		$new_val = yii::$app->request->post('new_val');
+		$r_id = yii::$app->request->post('r_id');
+
+		$bloon = yii::$app->db->createCommand("UPDATE rate SET rate='$new_val' WHERE r_id = '$r_id'")->execute();
+		if($bloon) {
+			echo 1;
+		}
+	}
 }
