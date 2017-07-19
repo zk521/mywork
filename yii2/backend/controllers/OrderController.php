@@ -39,14 +39,19 @@ class OrderController extends Controller
 	public function actionSearch(){
 		$data = yii::$app->request->post();
 		// print_r($data);die;
-		$where = ' where 1=1 and '; 
+		$where = ' where 1=1 '; 
 		if(!empty($data['start_time'])){
-			$where .= '`add_time` >=' . strtotime($data['start_time']).' and ';
+			$where .= ' and `add_time` >=' . strtotime($data['start_time']);
 			unset($data['start_time']);
 		}
 		if(!empty($data['stop_time'])){
-			$where .= ' `add_time` <= ' . strtotime($data['stop_time']) .' and ';
+			$where .= '  and  `add_time` <= ' . strtotime($data['stop_time']);
 			unset($data['stop_time']);
+		}
+		if(!empty($data['order_sn'])){
+			$order_sn = trim($data["order_sn"]);
+			$where .= '  and  `order_sn` like "%'.$order_sn.'%"';
+			unset($data['order_sn']);
 		}
 		$where .= $this->formatUpdate($data);
 		$orderInfo = $this->orderInfo($where);
@@ -92,28 +97,6 @@ class OrderController extends Controller
 			echo 0;
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	//拼接where
 	public function formatUpdate($data)
     {
@@ -126,7 +109,10 @@ class OrderController extends Controller
         foreach ($data as $key => $value) {
             $fields[] = sprintf("`%s` = '%s'", $key, $value);
         }
-        $where = implode(' and ', $fields);
+        $where =' ';
+        if(!empty($fields)){
+	        $where .= ' and '.implode(' and ', $fields);
+        }
         return $where;
     }
     //查询订单详情表
@@ -151,18 +137,18 @@ class OrderController extends Controller
     }
 }
 /* [id] => 2
-            [order_sn] => E34324324
-            [order_status] => 1
-            [shipping_status] => 1
-            [pay_status] => 1
-            [message] => 中通
-            [goods_amount] => 1000.00
-            [order_amount] => 1000.00
-            [pay_time] => 1111111111
-            [add_time] => 1111111111
-            [username ] => 刘琪
-            [country] => 0
-            [province] => 1
-            [city] => 2
-            [user_id] => 1
-            [bussiness_id] => 1*/
+[order_sn] => E34324324
+[order_status] => 1
+[shipping_status] => 1
+[pay_status] => 1
+[message] => 中通
+[goods_amount] => 1000.00
+[order_amount] => 1000.00
+[pay_time] => 1111111111
+[add_time] => 1111111111
+[username ] => 刘琪
+[country] => 0
+[province] => 1
+[city] => 2
+[user_id] => 1
+[bussiness_id] => 1*/

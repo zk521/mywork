@@ -57,24 +57,24 @@
 						</div>
 						<div class="cfD">
 							订单状态：<label><input
-								type="radio" checked="checked" name="styleshoice1" value="0" />&nbsp;未确认</label> <label><input
-								type="radio" name="styleshoice1" value="1"/>&nbsp;确认</label> <label><input
-								type="radio" name="styleshoice1" value="2"/>&nbsp;已取消</label> <label><input
-								type="radio" name="styleshoice1" value="3"/>&nbsp;无效</label> <label class="lar"><input
-								type="radio" name="styleshoice1" value="4"/>&nbsp;退货</label>
+								type="radio" checked="checked" name="styleshoice1" value="1" />&nbsp;未确认</label> <label><input
+								type="radio" name="styleshoice1" value="2"/>&nbsp;确认</label> <label><input
+								type="radio" name="styleshoice1" value="3"/>&nbsp;已取消</label> <label><input
+								type="radio" name="styleshoice1" value="4"/>&nbsp;无效</label> <label class="lar"><input
+								type="radio" name="styleshoice1" value="5"/>&nbsp;退货</label>
 						</div>
 						<div class="cfD">
 							配送情况：<label><input
-								type="radio" checked="checked" name="styleshoice2" value="0" />&nbsp;未发货</label> <label><input
-								type="radio" name="styleshoice2" value="1" />&nbsp;已发货</label><label><input
-								type="radio" name="styleshoice2" value="2" />&nbsp;配货中</label><label><input
-								type="radio" name="styleshoice2" value="3" />&nbsp;已签收</label><label><input
-								type="radio" name="styleshoice2"  value="4"/>&nbsp;退货</label>
+								type="radio" checked="checked" name="styleshoice2" value="1" />&nbsp;未发货</label> <label><input
+								type="radio" name="styleshoice2" value="2" />&nbsp;已发货</label><label><input
+								type="radio" name="styleshoice2" value="3" />&nbsp;配货中</label><label><input
+								type="radio" name="styleshoice2" value="4" />&nbsp;已签收</label><label><input
+								type="radio" name="styleshoice2"  value="5"/>&nbsp;退货</label>
 						</div>
 						<div class="cfD">		
 							支付状态：<label><input
-								type="radio" checked="checked" name="styleshoice3" value="0" />&nbsp;未付款</label> <label><input
-								type="radio" name="styleshoice3" value="1" />&nbsp;已付款</label>	
+								type="radio" checked="checked" name="styleshoice3" value="1" />&nbsp;未付款</label> <label><input
+								type="radio" name="styleshoice3" value="2" />&nbsp;已付款</label>	
 						</div>
 						<div class="cfD">
 							商家：<select name="bussiness_id" id="shangjia">
@@ -113,32 +113,32 @@
 							<td><input name="id[]" type="checkbox" value="<?=$value['id']?>" /></td>
 							<td><span class='details' id="<?=$value['id']?>"><?=$value['order_sn']?></span></td>
 							<td><?=$value['add_time']?></td>
-							<?php if ($value['order_status'] ==0): ?>
+							<?php if ($value['order_status'] ==1): ?>
 								<td>未确认</td>
-							<?php elseif($value['order_status'] ==1):?>	
-								<td>确认</td>
 							<?php elseif($value['order_status'] ==2):?>	
-								<td>已取消</td>
+								<td>确认</td>
 							<?php elseif($value['order_status'] ==3):?>	
-								<td>无效</td>
+								<td>已取消</td>
 							<?php elseif($value['order_status'] ==4):?>	
+								<td>无效</td>
+							<?php elseif($value['order_status'] ==5):?>	
 								<td>退货</td>
 							<?php endif ?>
-							<?php if ($value['pay_status'] == 0): ?>
+							<?php if ($value['pay_status'] == 1): ?>
 								<td><span class="pay_status" pay-status="<?=$value['pay_status']?>">未付款</span></td>
-							<?php elseif($value['pay_status'] == 1):?>	
+							<?php elseif($value['pay_status'] == 2):?>	
 								<td><span class="pay_status" pay-status="<?=$value['pay_status']?>">已付款</span></td>
 							<?php endif ?>
 							<td><?=$value['pay_time']?></td>
-							<?php if ($value['shipping_status'] == 0): ?>
+							<?php if ($value['shipping_status'] == 1): ?>
 								<td>未发货</td>
-							<?php elseif($value['order_status'] ==1):?>	
-								<td>已发货</td>
 							<?php elseif($value['order_status'] ==2):?>	
-								<td>配货中</td>
+								<td>已发货</td>
 							<?php elseif($value['order_status'] ==3):?>	
-								<td>已签收</td>
+								<td>配货中</td>
 							<?php elseif($value['order_status'] ==4):?>	
+								<td>已签收</td>
+							<?php elseif($value['order_status'] ==5):?>	
 								<td>退货</td>
 							<?php endif ?>
 							<td><?=$value['message']?></td>
@@ -201,33 +201,33 @@
 						var pay_status= '';
 						var shipping_status= '';
 
-						if(v.order_status == 0){
+						if(v.order_status == 1){
 						 order_status ='未确认';
-						}else if(v.order_status == 1){
-							order_status ='确认';
 						}else if(v.order_status == 2){
+							order_status ='确认';
+						}else if(v.order_status == 3){
 							order_status ='已取消';
-						}else if(v.order_status == 3 ){
+						}else if(v.order_status == 4 ){
 							order_status ='无效';
-						}else if(v.order_status ==4){
+						}else if(v.order_status ==5){
 							order_status ='退货';
 						}
 
-						if(v.pay_status ==0){
+						if(v.pay_status ==1){
 					 		pay_status ='未付款';
-						}else if(v.pay_status ==1){
+						}else if(v.pay_status ==2){
 							pay_status ='已付款';
 						}
 
-						if(v.shipping_status ==0){
+						if(v.shipping_status ==1){
 							shipping_status ='未发货';
-						}else if(v.shipping_status ==1){
-							shipping_status ='已发货';
 						}else if(v.shipping_status ==2){
-							shipping_status ='配货中';
+							shipping_status ='已发货';
 						}else if(v.shipping_status ==3){
-							shipping_status ='已签收';
+							shipping_status ='配货中';
 						}else if(v.shipping_status ==4){
+							shipping_status ='已签收';
+						}else if(v.shipping_status ==5){
 							shipping_status ='退货';
 						}
 						str +='<tr order-info-id="'+v.id+'"><td><input name="id[]" type="checkbox" value="'+v.id+'" /></td><td><span class="details" id="'+v.id+'">'+v.order_sn+'</span></td><td>'+v.add_time+'</td><td>'+order_status+'</td><td><span class="pay_status" pay-status="'+v.pay_status+'">'+pay_status+'</span></td><td>'+v.pay_time+'</td><td>'+shipping_status+'</td><td>'+v.message+'</td><td>'+v.username+'</td><td>'+v.tel+'</td><td>'+v.path+'</td><td><a href="connoisseuradd.html"><img class="operation"src="img/update.png"></a> <img class="operation delban"src="img/delete.png"></td></tr>';
@@ -261,9 +261,9 @@
 			
 			var obj=$(this);      
 			var pay_status=obj.val(); //获取要修改内容的id
-			if(pay_status == 0){
+			if(pay_status == 1){
 				 status_val = '未付款';
-			}else if(pay_status == 1){
+			}else if(pay_status == 2){
 				 status_val = '已付款';
 			}
 			if(pay_status == old_pay_status){
