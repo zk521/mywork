@@ -72,7 +72,7 @@ $(function (){
 							<td><?=$val['reg_time']?></td>
 							<td><?=$val['last_time']?></td>
 							<td>
-								<a href="">
+								<a href="?r=vip/update&id=<?=$val['vip_id']?>">
 									<img class="operation" src="img/update.png">
 								</a> 
 								<a href="?r=vip/vipdel&id=<?=$val['vip_id']?>">

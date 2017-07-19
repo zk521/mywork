@@ -50,6 +50,17 @@ class VipController extends controller
 			return $this->renderPartial('vip',['data'=>$data]);
 		}
 	}
+	// 会员列表修改
+	public function actionUpdate(){
+		$db = yii::$app->db;
+		$data = yii::$app->request->get();
+		$id = $data['id'];
+		$sqls = "select * from vip where vip_id=".$id;
+		$sql = "select * from viprank";
+		$update = $db->createCommand($sqls)->queryAll();
+		$leverdata = $db->createCommand($sql)->queryAll();
+		return $this->renderPartial('updatelist',['update'=>$update,'leverdata'=>$leverdata]);
+	}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 	//会员级别添加展示
 	public function actionRankadd(){
@@ -74,8 +85,6 @@ class VipController extends controller
 		$leverdata = $db->createCommand($sql)->queryAll();
 		return $this->renderPartial('ranklist',['leverdata'=>$leverdata]);
 	}
-	//修改
-	public function 
 	//删除
 	public function actionDel(){
 		$id = yii::$app->request->get();
