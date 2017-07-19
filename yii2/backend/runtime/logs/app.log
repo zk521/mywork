@@ -10969,3 +10969,538 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500384819.252
     'REQUEST_TIME' => 1500384819
 ]
+2017-07-19 10:48:25 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php:80
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 10:48:25 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/update&id=7'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/update&id=7'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500432505.172
+    'REQUEST_TIME' => 1500432505
+]
+2017-07-19 10:48:57 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php:80
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 10:48:57 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56144'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/update&id=7'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/update&id=7'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500432537.745
+    'REQUEST_TIME' => 1500432537
+]
+2017-07-19 10:49:31 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: db' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php:81
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 10:49:31 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56160'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/update&id=7'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/update&id=7'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500432571.09
+    'REQUEST_TIME' => 1500432571
+]
+2017-07-19 10:49:54 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: update_date' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php:83
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 10:49:54 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56174'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/update&id=7'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/update&id=7'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500432593.987
+    'REQUEST_TIME' => 1500432593
+]
+2017-07-19 10:54:55 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: email' in D:\phpStudy\WWW\gitshop\yii2\backend\views\vip\updatevip.php:25
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render()
+#3 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php(83): yii\base\Controller->renderPartial()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\VipController->actionUpdate()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-07-19 10:54:55 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56437'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/update&id=7'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/update&id=7'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500432895.328
+    'REQUEST_TIME' => 1500432895
+]
+2017-07-19 11:03:17 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot redeclare backend\controllers\VipController::actionAdd()' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php:54
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-19 11:03:17 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/index'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/inc/left.html'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56822'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/index'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500433397.003
+    'REQUEST_TIME' => 1500433397
+]
+2017-07-19 11:03:37 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: leverdata' in D:\phpStudy\WWW\gitshop\yii2\backend\views\vip\updatevip.php:38
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render()
+#3 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php(67): yii\base\Controller->renderPartial()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\VipController->actionUpdate()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-07-19 11:03:37 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56897'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/update&id=7'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/update&id=7'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500433417.07
+    'REQUEST_TIME' => 1500433417
+]
+2017-07-19 11:04:29 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: leverdata' in D:\phpStudy\WWW\gitshop\yii2\backend\views\vip\updatevip.php:38
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render()
+#3 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\VipController.php(67): yii\base\Controller->renderPartial()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\VipController->actionUpdate()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-07-19 11:04:29 [127.0.0.1][-][1nbfigkn9occ1aiqipmnh920s6][info][application] $_GET = [
+    'r' => 'vip/update'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => '1nbfigkn9occ1aiqipmnh920s6'
+    '_csrf-backend' => 'b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"¯Ö\'ÉIô3’²0ìßÉ¶y¾ŽB3ä¹ˆîïMóÚé\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=vip/index'
+    'HTTP_COOKIE' => 'mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=1nbfigkn9occ1aiqipmnh920s6; _csrf-backend=b4ed6d4c59f5f827cd812ab9d446939333455d6927b3be665a96a06f27ae41b4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1C%AF%D6%27%17%C9I%F43%92%B20%EC%DF%C9%B6y%BE%8EB3%1E%E4%B9%88%EE%EFM%F3%DA%15%E9%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '56900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=vip/update&id=7'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=vip/update&id=7'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500433469.418
+    'REQUEST_TIME' => 1500433469
+]
