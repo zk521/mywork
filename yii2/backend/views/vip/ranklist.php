@@ -32,13 +32,14 @@ $(function (){
 					href="#">会员管理</a>&nbsp;-</span>&nbsp;级别管理
 			</div>
 		</div>
-
+			<a class="addA addA1" href="?r=vip/add">新增级别+</a> 
 		<div class="page">
 			<!-- vip页面样式 -->
 			<div class="vip">
 				<!-- vip 表格 显示 -->
 				<div class="conShow">
 					<table border="1" cellspacing="0" cellpadding="0">
+
 						<tr>
 							<td width="66px" class="tdColor tdC">序号</td>
 							<td width="250px" class="tdColor">级别</td>

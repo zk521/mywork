@@ -75,7 +75,7 @@ $(function (){
 								<a href="">
 									<img class="operation" src="img/update.png">
 								</a> 
-								<a href="">
+								<a href="?r=vip/vipdel&id=<?=$val['vip_id']?>">
 									<img class="operation delban" src="img/delete.png">
 								</a> 
 							</td>
