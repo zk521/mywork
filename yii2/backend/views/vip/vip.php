@@ -45,8 +45,7 @@ $(function (){
 						<div class="cfD">
 							<input class="addUser" type="text" placeholder="输入用户名/ID/手机号/城市" />
 							<button class="button">搜索</button>
-							<a class="addA addA1" href="vipadd.html">新增会员+</a> <a
-								class="addA addA1 addA2" href="vipadd.html">密码重置</a>
+							<a class="addA addA1" href="?r=vip/add">新增会员+</a> 
 						</div>
 					</form>
 				</div>
@@ -63,23 +62,25 @@ $(function (){
 							<td width="290px" class="tdColor">最后一次登录时间</td>
 							<td width="130px" class="tdColor">操作</td>
 						</tr>
-
+					<?php foreach ($data as $key => $val): ?>
 						<tr>
-							<td>1</td>
-							<td><div class="onsImg onsImgv">
-									<img src="img/banimg.png">
-								</div></td>
-							<td>山下就只</td>
-							<td>13312345678</td>
-							<td>南京市</td>
-							<td>0.00<input class="vipinput" type="text" /><a
-								class="vsAdd">增加</a></td>
-							<td>总监</td>
-							<td><a href="connoisseuradd.html"><img class="operation"
-									src="img/update.png"></a> <img class="operation delban"
-								src="img/delete.png"></td>
+							<td><?=$val['vip_id']?></td>
+							<td><?=$val['name']?></td>
+							<td><?=$val['email']?></td>
+							<td><?=$val['vip_level']?></td>
+							<td><?=$val['pay_points']?></td>
+							<td><?=$val['reg_time']?></td>
+							<td><?=$val['last_time']?></td>
+							<td>
+								<a href="">
+									<img class="operation" src="img/update.png">
+								</a> 
+								<a href="?r=vip/vipdel&id=<?=$val['vip_id']?>">
+									<img class="operation delban" src="img/delete.png">
+								</a> 
+							</td>
 						</tr>
-						
+					<?php endforeach;?>	
 					</table>
 					<div class="paging">此处是分页</div>
 				</div>
