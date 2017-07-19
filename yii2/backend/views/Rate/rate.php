@@ -45,15 +45,14 @@ $(function (){
 						<tr>
 							<td width="66px" class="tdColor tdC">级别</td>
 							<td width="250px" class="tdColor">利率</td>
-							<td width="250px" class="tdColor">操作</td>
+							<td width="250px" class="tdColor">删除操作</td>
 						</tr>
 						<?php foreach($arr as $k=>$v ) {?>
 						<tr>
 							<td><?=$v['r_id']?></td>
-							<td><?=$v['rate']?></td>
+							<td><span r_id="<?=$v['r_id']?>" class="upde"><?=$v['rate']?></span></td>
 							<td>
-								<a href="connoisseuradd.html"><img class="operation" src="img/update.png"></a>
-								<img class="operation delban" src="img/delete.png">
+								<img class="operation delban" r_id="<?=$v['r_id']?>" src="img/delete.png">
 							</td>
 						</tr>
 						<?php }?>
@@ -74,7 +73,7 @@ $(function (){
 			<div class="close">
 				<a><img src="img/shanchu.png" /></a>
 			</div>
-			<p class="delP1">你确定要删除此条记录吗？</p>
+			<p class="delP1">你确定要删除这些等级的利率吗？</p>
 			<p class="delP2">
 				<a href="#" class="ok yes">确定</a><a class="ok no">取消</a>
 			</p>
@@ -87,6 +86,17 @@ $(function (){
 // 广告弹出框
 $(".delban").click(function(){
   $(".banDel").show();
+  //确定删除请空表
+  $('.yes').click(function() {
+  	$.ajax({
+  		url:'?r=rate/del',
+  		success:function(obj) {
+  			if(obj == 1) {
+  				location.reload();
+  			}
+  		}
+  	})
+  })
 });
 $(".close").click(function(){
   $(".banDel").hide();
@@ -95,5 +105,31 @@ $(".no").click(function(){
   $(".banDel").hide();
 });
 // 广告弹出框 end
+
+//即点即改修改利率
+$('.upde').click(function() {
+	var _this = $(this);
+	//接收原来的值
+	var val = _this.text();
+	//接收当前的ID
+	var r_id = _this.attr('r_id');
+	//点击追加文本框赋值
+	_this.parent().html("<input type='text' value="+val+" class='new_val'>");
+	$('.new_val').focus();
+	$('.new_val').blur(function() {
+		var new_val = $('.new_val').val();
+		$.ajax({
+			url:'?r=rate/upde',
+			type:'post',
+			data:{'new_val':new_val, 'r_id':r_id},
+			success:function(obj) {
+				if(obj == 1) {
+					$('.new_val').parent().html("<span class='upde'>"+new_val+"</span>");
+				}
+			}
+		})
+	})
+})
+
 </script>
 </html>

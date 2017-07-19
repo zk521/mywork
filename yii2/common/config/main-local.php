@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['HTTP_HOST'] == 'localhost') {
+if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'www.myshop.com') {
     return [
         'components' => [
             'db' => [
