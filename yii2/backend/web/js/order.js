@@ -60,7 +60,7 @@ $(document).on('click', '.button', function(){
 			}
 		}
 	})
-})
+});
 //订单详情
 $(document).on('click','.details',function(){
 	var _this = $(this);
@@ -81,7 +81,7 @@ $(document).on('click','.details',function(){
 			}
 		}		
 	})
-})
+});
 //修改状态
 $(document).on('click', '.status', function(){
 	var _this = $(this);
@@ -165,15 +165,13 @@ $(document).on('click', '.del', function(){
 		 	$.ajax({      
 			    type:'post',      
 			    url:'?r=order/del',      
-			    data:{      
-			        ids:ids,      
-			    },      
+			    data:{ids:ids},
 			    success:function(msg){      
 			        if(msg == 1){      
 			            alert('删除成功');
 			            $("input:checkbox[name='order_id']:checked").each(function() {
 				  			n = $("input:checkbox[name='order_id']:checked").parents('tr').index();
-				    		$('.search').find('tr:eq('+n+')').remove();
+                            $('.search').find('tr:eq('+n+')').remove();
 			        	});
 			        }else{      
 			            alert('删除失败'); 
@@ -182,4 +180,4 @@ $(document).on('click', '.del', function(){
 			    }      
 			}) 
 		}
-	})
+	});

@@ -71,7 +71,7 @@ class OrderController extends Controller
 	 */
 	public function actionDelete(){
 		$id = yii::$app->request->get('id');
-		$arr = Yii::$app->db->createCommand()->delete('order_info', 'id = '.$id)->execute();
+		$arr = Yii::$app->db->createCommand()->delete('order_info', 'id ='.$id)->execute();
 		if($arr){
 			echo 1;
 		}
