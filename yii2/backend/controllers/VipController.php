@@ -85,10 +85,7 @@ class VipController extends controller
 		$leverdata = $db->createCommand($sql)->queryAll();
 		return $this->renderPartial('ranklist',['leverdata'=>$leverdata]);
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 	//删除
 	public function actionDel(){
 		$id = yii::$app->request->get();
