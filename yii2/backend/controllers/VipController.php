@@ -50,6 +50,7 @@ class VipController extends controller
 			return $this->renderPartial('vip',['data'=>$data]);
 		}
 	}
+
 	//修改
 	public function actionUpdate(){
 		$db = yii::$app->db;
