@@ -48,6 +48,10 @@ class OrderController extends Controller
 			$where .= ' `add_time` <= ' . strtotime($data['stop_time']) .' and ';
 			unset($data['stop_time']);
 		}
+		if(!empty($data['order_sn'])){
+			$where .= ' `order_sn` like "%'.trim($data["order_sn"]).'%" and ';
+			unset($data['order_sn']);
+		}
 		$where .= $this->formatUpdate($data);
 		$orderInfo = $this->orderInfo($where);
 		$success = '查询成功';
@@ -124,7 +128,7 @@ class OrderController extends Controller
 		}
         $fields = array();
         foreach ($data as $key => $value) {
-            $fields[] = sprintf("`%s` = '%s'", $key, $value);
+            $fields[] = sprintf("`%s` = '%s'", $key, trim($value));
         }
         $where = implode(' and ', $fields);
         return $where;
