@@ -6,7 +6,7 @@ if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'www.myshop.
                 'class' => 'yii\db\Connection',
                 'dsn' => 'mysql:host=127.0.0.1;dbname=myshop',
                 'username' => 'root',
-                'password' => 'liu1205',
+                'password' => 'root',
                 'charset' => 'utf8',
             ],
             'mailer' => [

@@ -24782,3 +24782,157 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500518195.893
     'REQUEST_TIME' => 1500518195
 ]
+2017-07-20 14:12:46 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 83664 bytes' 
+
+in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#4 {main}
+2017-07-20 14:12:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '52443'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500531166.192
+    'REQUEST_TIME' => 1500531166
+]
+2017-07-20 14:12:50 [127.0.0.1][-][vesf4s7dlr7bdhn3s8l6o9dn01][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\RateController.php(24): yii\db\Command->queryAll()
+#8 [internal function]: backend\controllers\RateController->actionSet()
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\RateController.php(24): yii\db\Command->queryAll()
+#6 [internal function]: backend\controllers\RateController->actionSet()
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2017-07-20 14:12:50 [127.0.0.1][-][vesf4s7dlr7bdhn3s8l6o9dn01][info][application] $_GET = [
+    'r' => 'rate/set'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/gitshop/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/inc/left.html'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '52443'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=rate/set'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/?r=rate/set'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500531170.206
+    'REQUEST_TIME' => 1500531170
+]
