@@ -43,7 +43,7 @@ class IndexController extends CommonController
 	{
 		$bloon = yii::$app->session->remove('username');
 		if($bloon) {
-			return $this->redirect('?r=login/log');
+			return $this->redirect('?r=login/index');
 		}
 	}
 }
