@@ -24396,3 +24396,1365 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500520944.5943
     'REQUEST_TIME' => 1500520944
 ]
+2017-07-20 11:25:46 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 67065 bytes' 
+
+in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#4 {main}
+2017-07-20 11:25:46 [::1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54692'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521146.7158
+    'REQUEST_TIME' => 1500521146
+]
+2017-07-20 11:26:01 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(221): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(954): yii\db\Command->prepare('<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\CountController.php(43): yii\db\Command->execute()
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\CountController.php(21): backend\controllers\CountController->getCount('<span class="st...')
+#7 [internal function]: backend\controllers\CountController->actionIndex()
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(221): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(954): yii\db\Command->prepare('<span class="ke...')
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\CountController.php(43): yii\db\Command->execute()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\CountController.php(21): backend\controllers\CountController->getCount('<span class="st...')
+#5 [internal function]: backend\controllers\CountController->actionIndex()
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+
+2017-07-20 11:26:01 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54694'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521161.0788
+    'REQUEST_TIME' => 1500521161
+]
+2017-07-20 11:26:06 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(47): yii\db\Command->queryAll()
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(20): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#10 [internal function]: backend\controllers\PendingController->actionIndex()
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(47): yii\db\Command->queryAll()
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(20): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#8 [internal function]: backend\controllers\PendingController->actionIndex()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2017-07-20 11:26:06 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54696'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521166.2609
+    'REQUEST_TIME' => 1500521166
+]
+2017-07-20 11:26:08 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(47): yii\db\Command->queryAll()
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(20): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#10 [internal function]: backend\controllers\PendingController->actionIndex()
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(47): yii\db\Command->queryAll()
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(20): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#8 [internal function]: backend\controllers\PendingController->actionIndex()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2017-07-20 11:26:08 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54698'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521168.3882
+    'REQUEST_TIME' => 1500521168
+]
+2017-07-20 11:26:13 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\OrderController.php(31): yii\db\Command->queryAll()
+#8 [internal function]: backend\controllers\OrderController->actionIndex()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\OrderController.php(31): yii\db\Command->queryAll()
+#6 [internal function]: backend\controllers\OrderController->actionIndex()
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2017-07-20 11:26:13 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'order/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=order/index'
+    'QUERY_STRING' => 'r=order/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54700'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521173.7266
+    'REQUEST_TIME' => 1500521173
+]
+2017-07-20 11:26:15 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\OrderController.php(31): yii\db\Command->queryAll()
+#8 [internal function]: backend\controllers\OrderController->actionIndex()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\OrderController.php(31): yii\db\Command->queryAll()
+#6 [internal function]: backend\controllers\OrderController->actionIndex()
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2017-07-20 11:26:15 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'order/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=order/index'
+    'QUERY_STRING' => 'r=order/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54704'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521175.3875
+    'REQUEST_TIME' => 1500521175
+]
+2017-07-20 11:26:17 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\BannerController.php(25): yii\db\Command->queryAll()
+#8 [internal function]: backend\controllers\BannerController->actionShow()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\BannerController.php(25): yii\db\Command->queryAll()
+#6 [internal function]: backend\controllers\BannerController->actionShow()
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2017-07-20 11:26:17 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'banner/show'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=banner/show'
+    'QUERY_STRING' => 'r=banner/show'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54706'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521177.4577
+    'REQUEST_TIME' => 1500521177
+]
+2017-07-20 11:26:18 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\BannerController.php(25): yii\db\Command->queryAll()
+#8 [internal function]: backend\controllers\BannerController->actionShow()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\BannerController.php(25): yii\db\Command->queryAll()
+#6 [internal function]: backend\controllers\BannerController->actionShow()
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2017-07-20 11:26:18 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'banner/show'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=banner/show'
+    'QUERY_STRING' => 'r=banner/show'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54708'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521178.8837
+    'REQUEST_TIME' => 1500521178
+]
+2017-07-20 11:26:20 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\BannerController.php(25): yii\db\Command->queryAll()
+#8 [internal function]: backend\controllers\BannerController->actionShow()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\BannerController.php(25): yii\db\Command->queryAll()
+#6 [internal function]: backend\controllers\BannerController->actionShow()
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2017-07-20 11:26:20 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'banner/show'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=banner/show'
+    'QUERY_STRING' => 'r=banner/show'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54711'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521180.0275
+    'REQUEST_TIME' => 1500521180
+]
+2017-07-20 11:26:27 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'liu1205', NULL)
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\RateController.php(24): yii\db\Command->queryAll()
+#8 [internal function]: backend\controllers\RateController->actionSet()
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1027): yii\db\Command->prepare('<span class="ke...')
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\RateController.php(24): yii\db\Command->queryAll()
+#6 [internal function]: backend\controllers\RateController->actionSet()
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+Additional Information:
+
+2017-07-20 11:26:27 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'rate/set'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=rate/set'
+    'QUERY_STRING' => 'r=rate/set'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54716'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521187.3103
+    'REQUEST_TIME' => 1500521187
+]
+2017-07-20 11:27:29 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.pay_three' doesn't exist' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PayController.php(32): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PayController->actionPaylist()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.pay_three' doesn't exist
+The SQL being executed was: select * from pay_three' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from p...')
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PayController.php(32): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PayController->actionPaylist()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.pay_three' doesn't exist
+)
+
+2017-07-20 11:27:29 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'pay/paylist'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=pay/paylist'
+    'QUERY_STRING' => 'r=pay/paylist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54729'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/?r=pay/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521249.6531
+    'REQUEST_TIME' => 1500521249
+]
+2017-07-20 11:27:34 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-20 11:27:34 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'vip/add'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=vip/add'
+    'QUERY_STRING' => 'r=vip/add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54731'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521254.3887
+    'REQUEST_TIME' => 1500521254
+]
+2017-07-20 11:27:39 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\VipController.php(89): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\VipController.php(89): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-20 11:27:39 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'vip/ranklist'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/index.php?r=vip/ranklist'
+    'QUERY_STRING' => 'r=vip/ranklist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54733'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521259.1093
+    'REQUEST_TIME' => 1500521259
+]
+2017-07-20 11:27:52 [::1][-][btelfp4bmu8vomjq57t8rfqc61][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(28): yii\db\Command->queryAll()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#4 [internal function]: backend\controllers\PendingController->actionIndex()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+The SQL being executed was: select goods_sn from goods where id in ()' in F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select goods_sn...')
+#1 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\xm\yii2\backend\models\Pending.php(28): yii\db\Command->queryAll()
+#3 F:\web\phpStudy\WWW\big1\xm\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#4 [internal function]: backend\controllers\PendingController->actionIndex()
+#5 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#6 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 F:\web\phpStudy\WWW\big1\xm\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 F:\web\phpStudy\WWW\big1\xm\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+)
+
+2017-07-20 11:27:52 [::1][-][btelfp4bmu8vomjq57t8rfqc61][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499307310,1499605131,1499648067,1499740255'
+    'advanced-backend' => 'btelfp4bmu8vomjq57t8rfqc61'
+    '_csrf-backend' => 'e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"d»;Kµ
+¡Me¸[ 
+vŽëíµgŒ²ª$í‘\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/big1/xm/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\å­¦ä¹ \\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/xm/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54737'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/xm/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499307310,1499605131,1499648067,1499740255; advanced-backend=btelfp4bmu8vomjq57t8rfqc61; _csrf-backend=e406a110d2804dc384c5f46b5a8461d23c4796a6dd837ef20c065d198e29544fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22d%BB%1C%3BK%B5%0A%A1Me%B8%5B+%0A%07%0Dv%8E%13%EB%ED%90%B5g%8C%B2%AA%24%0B%ED%91%0F%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/big1/xm/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/xm/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500521272.0651
+    'REQUEST_TIME' => 1500521272
+]
