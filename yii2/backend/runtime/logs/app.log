@@ -12489,3 +12489,2851 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500444621.503
     'REQUEST_TIME' => 1500444621
 ]
+2017-07-19 16:33:29 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php:646
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(646): PDO->__construct('mysql:host=127....', 'root', 'root', NULL)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php(440): yii\db\Connection->getSlavePdo()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('<span class="st...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(983): yii\db\Command->getRawSql()
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Command->logQuery('<span class="st...')
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Query.php(254): yii\db\Command->queryOne()
+#11 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one('<span class="ke...')
+#12 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#13 E:\Web\WWW\v1\yii2\common\models\User.php(83): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#14 E:\Web\WWW\v1\yii2\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#15 E:\Web\WWW\v1\yii2\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#17 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#18 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#19 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#20 E:\Web\WWW\v1\yii2\common\models\LoginForm.php(58): yii\base\Model->validate()
+#21 E:\Web\WWW\v1\yii2\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#24 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#25 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#26 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#27 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php:584
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(928): yii\db\Connection->open()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php(440): yii\db\Connection->getSlavePdo()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Connection.php(824): yii\db\Schema->quoteValue('<span class="st...')
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(983): yii\db\Command->getRawSql()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Command->logQuery('<span class="st...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Query.php(254): yii\db\Command->queryOne()
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\ActiveQuery.php(294): yii\db\Query->one('<span class="ke...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#11 E:\Web\WWW\v1\yii2\common\models\User.php(83): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#12 E:\Web\WWW\v1\yii2\common\models\LoginForm.php(73): common\models\User::findByUsername('<span class="st...')
+#13 E:\Web\WWW\v1\yii2\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#14 [internal function]: common\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#15 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...', Object(yii\validators\InlineValidator))
+#16 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), '<span class="st...')
+#17 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), '[<span class="s...')
+#18 E:\Web\WWW\v1\yii2\common\models\LoginForm.php(58): yii\base\Model->validate()
+#19 E:\Web\WWW\v1\yii2\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#20 [internal function]: backend\controllers\SiteController->actionLogin()
+#21 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#22 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#23 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#24 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#25 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2017-07-19 16:33:29 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'DVlSSYikD5J3wLdljzj0kOYvZ1xmAOV8a7KGAsOIK1VJBmrr3Rj0fTAh5G8GwYkxfVm2nLNjWCw1WiqIPkZavg=='
+    'LoginForm' => [
+        'username' => 'åˆ˜è‹'
+        'password' => '123123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '772'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/index.php?r=site%2Flogin'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50543'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/index.php?r=site%2Flogin'
+    'CONTENT_LENGTH' => '250'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500453209.2964
+    'REQUEST_TIME' => 1500453209
+]
+2017-07-19 16:39:59 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "count/index".' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('count/index', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 16:39:59 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2128'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50597'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500453599.4271
+    'REQUEST_TIME' => 1500453599
+]
+2017-07-19 16:40:25 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "count/index".' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('count/index', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 16:40:25 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2128'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/index.php?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50608'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500453625.4945
+    'REQUEST_TIME' => 1500453625
+]
+2017-07-19 16:42:00 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "count/index".' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('count/index', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 16:42:00 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2128'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50637'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500453720.4329
+    'REQUEST_TIME' => 1500453720
+]
+2017-07-19 16:42:01 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "count/index".' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('count/index', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 16:42:01 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2128'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50637'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500453721.6833
+    'REQUEST_TIME' => 1500453721
+]
+2017-07-19 16:42:15 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "count/index".' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('count/index', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 16:42:15 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2128'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/index.php?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50644'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500453735.7699
+    'REQUEST_TIME' => 1500453735
+]
+2017-07-19 16:50:49 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Object of class yii\db\DataReader could not be converted to string' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:24
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 16:50:49 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50711'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500454249.5028
+    'REQUEST_TIME' => 1500454249
+]
+2017-07-19 16:52:00 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:24
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 16:52:00 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50737'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500454320.1865
+    'REQUEST_TIME' => 1500454320
+]
+2017-07-19 16:54:34 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Object of class yii\db\Connection could not be converted to string' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:27
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\CountController->actionIndex()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-19 16:54:34 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50744'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500454474.6324
+    'REQUEST_TIME' => 1500454474
+]
+2017-07-19 16:55:29 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Object of class yii\db\Connection could not be converted to string' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:27
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\CountController->actionIndex()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-19 16:55:29 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50746'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500454529.0821
+    'REQUEST_TIME' => 1500454529
+]
+2017-07-19 16:55:33 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Object of class yii\db\Connection could not be converted to string' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:27
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\CountController->actionIndex()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-19 16:55:33 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2168'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50749'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500454533.5372
+    'REQUEST_TIME' => 1500454533
+]
+2017-07-19 17:02:45 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Unsupported operand types' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:32
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 17:02:45 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2324'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50812'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500454965.6347
+    'REQUEST_TIME' => 1500454965
+]
+2017-07-19 17:03:05 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Unsupported operand types' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:32
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 17:03:05 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2324'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50814'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500454985.5208
+    'REQUEST_TIME' => 1500454985
+]
+2017-07-19 17:03:43 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Unsupported operand types' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:32
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 17:03:43 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2324'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50823'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500455023.8235
+    'REQUEST_TIME' => 1500455023
+]
+2017-07-19 17:03:44 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Unsupported operand types' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:32
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 17:03:44 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2324'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50826'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500455024.775
+    'REQUEST_TIME' => 1500455024
+]
+2017-07-19 17:04:25 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in E:\Web\WWW\v1\yii2\backend\controllers\CountController.php:32
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#5 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-19 17:04:25 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2324'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50925'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500455065.1462
+    'REQUEST_TIME' => 1500455065
+]
+2017-07-19 17:10:20 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-19 17:10:20 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'vip/add'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/index.php?r=vip/add'
+    'QUERY_STRING' => 'r=vip/add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50958'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500455420.7465
+    'REQUEST_TIME' => 1500455420
+]
+2017-07-19 17:10:36 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\VipController.php(85): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\VipController.php(85): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-19 17:10:35 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'vip/ranklist'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/index.php?r=vip/ranklist'
+    'QUERY_STRING' => 'r=vip/ranklist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50966'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500455435.9656
+    'REQUEST_TIME' => 1500455435
+]
+2017-07-19 18:45:00 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: bussiness_id' in E:\Web\WWW\v1\yii2\backend\controllers\OrderController.php:128
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\OrderController->actionIndex()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-19 18:45:00 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'order/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=order/index'
+    'QUERY_STRING' => 'r=order/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51910'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500461100.3067
+    'REQUEST_TIME' => 1500461100
+]
+2017-07-19 19:08:09 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Controller class must extend from \yii\base\Controller.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php:641
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID('pending')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController('pending/index')
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pending/index', Array)
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2017-07-19 19:08:09 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2416'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52176'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500462489.6599
+    'REQUEST_TIME' => 1500462489
+]
+2017-07-19 19:08:26 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Controller' not found' in E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php:14
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(633): yii\BaseYii::autoload()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#3 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#7 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2017-07-19 19:08:26 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2416'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52183'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500462506.7095
+    'REQUEST_TIME' => 1500462506
+]
+2017-07-19 19:49:06 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(25): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1
+The SQL being executed was: select goods_sn from goods where id in ,6,7' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select goods_sn...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(25): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1
+)
+
+2017-07-19 19:49:06 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2372'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52355'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500464946.4123
+    'REQUEST_TIME' => 1500464946
+]
+2017-07-19 19:49:33 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1
+The SQL being executed was: select goods_sn from goods where id in 6,7' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select goods_sn...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1
+)
+
+2017-07-19 19:49:33 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2372'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52358'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500464973.5552
+    'REQUEST_TIME' => 1500464973
+]
+2017-07-19 19:49:34 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1
+The SQL being executed was: select goods_sn from goods where id in 6,7' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select goods_sn...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '6,7' at line 1
+)
+
+2017-07-19 19:49:34 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2372'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52360'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500464974.5825
+    'REQUEST_TIME' => 1500464974
+]
+2017-07-19 19:49:44 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+The SQL being executed was: select goods_sn from goods where id in ' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select goods_sn...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+)
+
+2017-07-19 19:49:44 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2372'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52363'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500464984.1149
+    'REQUEST_TIME' => 1500464984
+]
+2017-07-19 19:49:45 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+The SQL being executed was: select goods_sn from goods where id in ' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select goods_sn...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\PendingController->actionIndex()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+)
+
+2017-07-19 19:49:45 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2372'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52365'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500464985.1138
+    'REQUEST_TIME' => 1500464985
+]
+2017-07-19 20:15:09 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selectorder_sn fromorder_info whereshipping_status =0' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\models\Pending.php(45): yii\db\Command->queryAll()
+#3 E:\Web\WWW\v1\yii2\backend\models\Pending.php(34): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#4 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(21): backend\models\Pending->pendOrder()
+#5 [internal function]: backend\controllers\PendingController->actionIndex()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selectorder_sn fromorder_info whereshipping_status =0' at line 1
+The SQL being executed was: selectorder_sn fromorder_info whereshipping_status =0' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'selectorder_sn ...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\models\Pending.php(45): yii\db\Command->queryAll()
+#3 E:\Web\WWW\v1\yii2\backend\models\Pending.php(34): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#4 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(21): backend\models\Pending->pendOrder()
+#5 [internal function]: backend\controllers\PendingController->actionIndex()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selectorder_sn fromorder_info whereshipping_status =0' at line 1
+)
+
+2017-07-19 20:15:09 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2516'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '53278'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500466509.7142
+    'REQUEST_TIME' => 1500466509
+]
+2017-07-19 20:15:24 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selectorder_sn fromorder_info where shipping_status =0' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\models\Pending.php(45): yii\db\Command->queryAll()
+#3 E:\Web\WWW\v1\yii2\backend\models\Pending.php(34): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#4 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(21): backend\models\Pending->pendOrder()
+#5 [internal function]: backend\controllers\PendingController->actionIndex()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selectorder_sn fromorder_info where shipping_status =0' at line 1
+The SQL being executed was: selectorder_sn fromorder_info where shipping_status =0' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'selectorder_sn ...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\models\Pending.php(45): yii\db\Command->queryAll()
+#3 E:\Web\WWW\v1\yii2\backend\models\Pending.php(34): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#4 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(21): backend\models\Pending->pendOrder()
+#5 [internal function]: backend\controllers\PendingController->actionIndex()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selectorder_sn fromorder_info where shipping_status =0' at line 1
+)
+
+2017-07-19 20:15:24 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2516'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '53282'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500466524.1955
+    'REQUEST_TIME' => 1500466524
+]
+2017-07-19 20:15:33 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where shipping_status =0' at line 1' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\models\Pending.php(45): yii\db\Command->queryAll()
+#3 E:\Web\WWW\v1\yii2\backend\models\Pending.php(34): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#4 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(21): backend\models\Pending->pendOrder()
+#5 [internal function]: backend\controllers\PendingController->actionIndex()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where shipping_status =0' at line 1
+The SQL being executed was: select order_sn fromorder_info where shipping_status =0' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select order_sn...')
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\Web\WWW\v1\yii2\backend\models\Pending.php(45): yii\db\Command->queryAll()
+#3 E:\Web\WWW\v1\yii2\backend\models\Pending.php(34): backend\models\Pending->getStatus('<span class="st...', '<span class="st...', '<span class="st...')
+#4 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(21): backend\models\Pending->pendOrder()
+#5 [internal function]: backend\controllers\PendingController->actionIndex()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where shipping_status =0' at line 1
+)
+
+2017-07-19 20:15:33 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2516'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '53285'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500466533.2244
+    'REQUEST_TIME' => 1500466533
+]
+2017-07-19 20:37:01 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: data' in E:\Web\WWW\v1\yii2\backend\views\pending\pending.php:65
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render()
+#3 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\base\Controller->renderPartial()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\PendingController->actionIndex()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-07-19 20:37:01 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2572'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '53783'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500467821.4358
+    'REQUEST_TIME' => 1500467821
+]
+2017-07-19 20:38:03 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: val' in E:\Web\WWW\v1\yii2\backend\views\pending\pending.php:54
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render()
+#3 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(26): yii\base\Controller->renderPartial()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\PendingController->actionIndex()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-07-19 20:38:03 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2572'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '53861'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500467883.8599
+    'REQUEST_TIME' => 1500467883
+]
+2017-07-19 20:58:08 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: pending/getOrder' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getOrder', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pending/getOrde...', Array)
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 20:58:08 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/getOrder'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2620'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/getOrder'
+    'QUERY_STRING' => 'r=pending/getOrder'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54484'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/?r=pending/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500469088.1642
+    'REQUEST_TIME' => 1500469088
+]
+2017-07-19 20:58:44 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: pending/getOrder' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getOrder', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pending/getOrde...', Array)
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 20:58:44 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/getOrder'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2620'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/getOrder'
+    'QUERY_STRING' => 'r=pending/getOrder'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54496'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/?r=pending/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500469124.0037
+    'REQUEST_TIME' => 1500469124
+]
+2017-07-19 20:59:53 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: pending/getOrder' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getOrder', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pending/getOrde...', Array)
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 20:59:53 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/getOrder'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2656'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/getOrder'
+    'QUERY_STRING' => 'r=pending/getOrder'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54621'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/?r=pending/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500469193.5058
+    'REQUEST_TIME' => 1500469193
+]
+2017-07-19 21:00:23 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: pending/getOrder' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('getOrder', Array)
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pending/getOrde...', Array)
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-19 21:00:23 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/getOrder'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2656'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/getOrder'
+    'QUERY_STRING' => 'r=pending/getOrder'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54628'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/?r=pending/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500469223.1976
+    'REQUEST_TIME' => 1500469223
+]
+2017-07-19 21:06:02 [::1][-][2vr3apk5g7105jfqcu420m8qo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: comment' in E:\Web\WWW\v1\yii2\backend\views\pending\getcomment.php:68
+Stack trace:
+#0 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render()
+#3 E:\Web\WWW\v1\yii2\backend\controllers\PendingController.php(37): yii\base\Controller->renderPartial()
+#4 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\PendingController->actionComment()
+#5 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 E:\Web\WWW\v1\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#10 E:\Web\WWW\v1\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2017-07-19 21:06:02 [::1][-][2vr3apk5g7105jfqcu420m8qo6][info][application] $_GET = [
+    'r' => 'pending/comment'
+]
+
+$_COOKIE = [
+    'pgv_pvi' => '3275487232'
+    'advanced-backend' => '2vr3apk5g7105jfqcu420m8qo6'
+    '_csrf-backend' => '6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"D_8¢U¼ûïGáS
+‰ù}¡›vÑÀÕc½P^è¬ŠýÎqë\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/v1/yii2/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;E:\\Web\\Mysql\\bin;F:\\month_4\\bin;E:\\Web\\php\\php-5.6.27-nts;F:\\php_9\\Git\\cmd;E:\\Web\\redis\\Redis-x64-3.2.100\\redis-server.exe;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/Web/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2656'
+    'SCRIPT_NAME' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/v1/yii2/backend/web/?r=pending/comment'
+    'QUERY_STRING' => 'r=pending/comment'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54730'
+    'SCRIPT_FILENAME' => 'E:/Web/WWW/v1/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/Web/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'pgv_pvi=3275487232; advanced-backend=2vr3apk5g7105jfqcu420m8qo6; _csrf-backend=6a0a83429213aa6a2ffb56144cd315a52686f4c609187d8d04b3e12a1b983c57a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22D_8%A2U%BC%FB%EFG%E1S%0A%89%F9%7D%A1%9Bv%D1%C0%D5c%BDP%5E%E8%AC%8A%FD%CEq%EB%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/v1/yii2/backend/web/?r=pending/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/v1/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500469562.2162
+    'REQUEST_TIME' => 1500469562
+]
