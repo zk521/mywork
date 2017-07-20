@@ -60,6 +60,7 @@ $(function (){
 							<td width="220px" class="tdColor">消费积分</td>
 							<td width="282px" class="tdColor">注册时间</td>
 							<td width="290px" class="tdColor">最后一次登录时间</td>
+							<td width="282px" class="tdColor">审核状态</td>
 							<td width="130px" class="tdColor">操作</td>
 						</tr>
 					<?php foreach ($data as $key => $val): ?>
@@ -70,6 +71,15 @@ $(function (){
 							<td><?=$val['vip_level']?></td>
 							<td><?=$val['pay_points']?></td>
 							<td><?=$val['reg_time']?></td>
+						<?php if($val['is_audit'] == 1) {?>
+							<td>
+								<img class="audit" style="height: 50px;width: 50px;" src="img/pass.png" value="<?=$val['vip_id']?>">
+							</td>
+						<?php }else{?>
+							<td>
+								<img class="audit" style="height: 50px;width: 50px;" src="img/shenhe.png" value="<?=$val['vip_id']?>">
+							</td>
+						<?php }?>
 							<td><?=$val['last_time']?></td>
 							<td>
 								<a href="?r=vip/update&id=<?=$val['vip_id']?>">
@@ -119,5 +129,21 @@ $(".no").click(function(){
   $(".banDel").hide();
 });
 // 广告弹出框 end
+
+// 审核start
+$(".audit").click(function(){
+	id = $(this).attr('value');
+	_this = $(this);
+	$.ajax({
+		url:"?r=vip/audit",
+		data:{id:id},
+		success:function(msg){
+			if (msg == 1) {
+				_this.attr('src','img/pass.png');
+			}
+		}
+	})
+})
+// 审核end
 </script>
 </html>

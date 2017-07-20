@@ -163,7 +163,7 @@ use yii\widgets\LinkPager;
 			<div class="close">
 				<a><img src="img/shanchu.png" /></a>
 			</div>
-			<p class="delP1">你确定要删除此条记录吗？</p>
+			<p class="delP1">你确定要删除选中的记录吗？</p>
 			<p class="delP2">
 				<a class="ok yes">确定</a><a class="ok no">取消</a>
 			</p>
