@@ -49,11 +49,11 @@ class CommonController extends Controller
                     return true;
                 }
              }
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
+            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/main'</script>";
             return false;
         }
         else{
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
+            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/main'</script>";
         }
         
 
