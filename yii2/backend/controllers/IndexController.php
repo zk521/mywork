@@ -22,4 +22,28 @@ class IndexController extends CommonController
 	{
 		return $this->renderPartial('index.php');
 	}
+	/**
+	 * 退出
+	 */
+	public function actionMain()
+	{
+		return $this->renderPartial('main.php');
+	}
+
+	public function actionHead()
+	{
+		//提取存入的session值
+		$name = yii::$app->session->get('username');
+
+		return $this->renderPartial('head.php', ['username'=>$name]);
+	}
+
+	//退出删除session
+	public function actionLogout()
+	{
+		$bloon = yii::$app->session->remove('username');
+		if($bloon) {
+			return $this->redirect('?r=login/index');
+		}
+	}
 }

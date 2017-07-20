@@ -17,8 +17,8 @@ class CommonController extends Controller
         $root_id  = Yii::$app->session->get('root');
         $username=yii::$app->session->get('username');
         //判断是否有登录session
-        if(!isset($root_id)){
-            echo "<script>alert('请先登录');location.href='index.php?r=login/log'</script>";die;
+        if(!isset($username)){
+            echo "<script>alert('请先登录');location.href='index.php?r=login/index'</script>";die;
         }
         //设置超级管理员
         if($username=="周可"){
@@ -49,11 +49,11 @@ class CommonController extends Controller
                     return true;
                 }
              }
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
+            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/main'</script>";
             return false;
         }
         else{
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
+            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/main'</script>";
         }
         
 

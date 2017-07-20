@@ -3,25 +3,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>头部-有点</title>
-<link rel="stylesheet" type="text/css" href="../css/public.css" />
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/public.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/public.css" />
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/public.js"></script>
 </head>
 
 <body>
 	<!-- 头部 -->
 	<div class="head">
 		<div class="headL">
-			<img class="headLogo" src="../img/headLogo.png" />
+			<img class="headLogo" src="./img/headLogo.png" />
 		</div>
 		<div class="headR">
 			<p class="p1">
 				欢迎，
-				<?php echo cookie('name')?>
+				<b style="color:#f00; font-size:18px;"><?=$username?></b>
 			</p>
 			<p class="p2">
 				<a href="#" class="resetPWD">重置密码</a>&nbsp;&nbsp;<a target="_top" 
-					href="../?r=login/log" class="goOut">退出</a>
+					href="./?r=index/logout" class="goOut">退出</a>
 			</p>
 		</div>
 		<!-- onclick="{if(confirm(&quot;确定退出吗&quot;)){return true;}return false;}" -->
