@@ -48,9 +48,9 @@
 						<p class="bbDP">
 							<button class="btn_ok btn_yes" href="#" id="btn">提交</button>
 							<a class="btn_ok btn_no" href="#">取消</a>
+							<span id="vipadd"></span>
 						</p>
 					</div>
-					<span id="vipadd"></span>
 				</div>
 			</div>
 

@@ -29,70 +29,44 @@ $(function (){
 		<div class="pageTop">
 			<div class="page">
 				<img src="img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
-					href="#">会员管理</a>&nbsp;-</span>&nbsp;会员管理
+					href="#">会员管理</a>&nbsp;-</span>&nbsp;级别管理
 			</div>
 		</div>
-
+			<a class="addA addA1" href="?r=pay/index">账户添加页面+</a> 
 		<div class="page">
 			<!-- vip页面样式 -->
 			<div class="vip">
-				<div class="conform">
-					<form>
-						<div class="cfD">
-							时间段：<input class="vinput mh_date" type="text" readonly="true" />&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
-							<input class="vinput mh_date" type="text" readonly="true" />
-						</div>
-						<div class="cfD">
-							<input class="addUser" type="text" placeholder="输入用户名/ID/手机号/城市" />
-							<button class="button">搜索</button>
-							<a class="addA addA1" href="?r=vip/add">新增会员+</a> 
-						</div>
-					</form>
-				</div>
 				<!-- vip 表格 显示 -->
 				<div class="conShow">
 					<table border="1" cellspacing="0" cellpadding="0">
+
 						<tr>
-							<td width="66px" class="tdColor tdC">序号</td>
-							<td width="188px" class="tdColor">姓名</td>
-							<td width="250px" class="tdColor">email</td>
-							<td width="235px" class="tdColor">会员等级</td>
-							<td width="220px" class="tdColor">消费积分</td>
-							<td width="282px" class="tdColor">注册时间</td>
-							<td width="290px" class="tdColor">最后一次登录时间</td>
-							<td width="282px" class="tdColor">审核状态</td>
+							<td width="250px" class="tdColor">ID</td>
+							<td width="66px" class="tdColor tdC">合作者id</td>
+							<td width="250px" class="tdColor">安全校验码</td>
+							<td width="282px" class="tdColor">账户</td>
+							<td width="282px" class="tdColor">账户内容</td>
 							<td width="130px" class="tdColor">操作</td>
 						</tr>
-					<?php foreach ($data as $key => $val): ?>
+			<?php foreach ($paydata as $key => $val): ?>
 						<tr>
-							<td><?=$val['vip_id']?></td>
-							<td><?=$val['name']?></td>
-							<td><?=$val['email']?></td>
-							<td><?=$val['vip_level']?></td>
-							<td><?=$val['pay_points']?></td>
-							<td><?=$val['reg_time']?></td>
-						<?php if($val['is_audit'] == 1) {?>
+							<td><?=$val['p_id']?></td>
+							<td><?=$val['partner_id']?></td>
+							<td><?=$val['keys']?></td>
+							<td><?=$val['account_numb']?></td>
+							<td id="content">详情</a></td>
 							<td>
-								<img class="audit" style="height: 50px;width: 50px;" src="img/pass.png" value="<?=$val['vip_id']?>">
-							</td>
-						<?php }else{?>
-							<td>
-								<img class="audit" style="height: 50px;width: 50px;" src="img/shenhe.png" value="<?=$val['vip_id']?>">
-							</td>
-						<?php }?>
-							<td><?=$val['last_time']?></td>
-							<td>
-								<a href="?r=vip/update&id=<?=$val['vip_id']?>">
+								<a href="index.php?r=/">
 									<img class="operation" src="img/update.png">
 								</a> 
-								<a href="?r=vip/vipdel&id=<?=$val['vip_id']?>">
+								<a href="index.php?r=/">
 									<img class="operation delban" src="img/delete.png">
-								</a> 
+								</a>
 							</td>
 						</tr>
-					<?php endforeach;?>	
+			<?php endforeach;?>
 					</table>
-					<div class="paging">此处是分页</div>
+					<div class="paging">jibie</div>
 				</div>
 				<!-- vip 表格 显示 end-->
 			</div>
@@ -110,7 +84,7 @@ $(function (){
 			</div>
 			<p class="delP1">你确定要删除此条记录吗？</p>
 			<p class="delP2">
-				<a href="#" class="ok yes">确定</a><a class="ok no">取消</a>
+				<a href="index.php?r=/" class="ok yes">确定</a><a class="ok no">取消</a>
 			</p>
 		</div>
 	</div>
@@ -130,20 +104,6 @@ $(".no").click(function(){
 });
 // 广告弹出框 end
 
-// 审核start
-$(".audit").click(function(){
-	id = $(this).attr('value');
-	_this = $(this);
-	$.ajax({
-		url:"?r=vip/audit",
-		data:{id:id},
-		success:function(msg){
-			if (msg == 1) {
-				_this.attr('src','img/pass.png');
-			}
-		}
-	})
-})
-// 审核end
+
 </script>
 </html>

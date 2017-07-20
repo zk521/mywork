@@ -46,7 +46,7 @@
 					</div>
 					<div class="bbD">
 						<p class="bbDP">
-							<button class="btn_ok btn_yes" href="#" id="btn">提交</button>
+							<button class="btn_ok btn_yes" href="#" id="btn">确认修改</button>
 							<a class="btn_ok btn_no" href="#">取消</a>
 						</p>
 					</div>
@@ -67,15 +67,17 @@
 		var parent_id = $("#parent_id").val();
 		var lever = $("#lever").val();
 		var is_validated = $("#is_validated").val();
+		alert(is_validated);
 		$.ajax({
-			url:"?r=vip/adddata",
+			url:"?r=vip/updateadd",
 			data:{email:email,alias:alias,mobile_phone:mobile_phone,parent_id:parent_id,lever:lever,is_validated:is_validated},
 			success:function(msg){
-				if (msg==1) {
-					$("#vipadd").html("添加成功");
-				}else{
-					$("#vipadd").html("添加失败");
-				}
+				alert(msg);
+				// if (msg==1) {
+				// 	$("#vipadd").html("添加成功");
+				// }else{
+				// 	$("#vipadd").html("添加失败");
+				// }
 			}
 		})
 	})
