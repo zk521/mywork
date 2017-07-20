@@ -44,7 +44,7 @@ $(function (){
 					<table border="1" cellspacing="0" cellpadding="0">
 						<tr>
 							<td width="66px" class="tdColor tdC">级别</td>
-							<td width="250px" class="tdColor">利率</td>
+							<td width="250px" class="tdColor">利率(支持即点即改)</td>
 							<td width="250px" class="tdColor">删除操作</td>
 						</tr>
 						<?php foreach($arr as $k=>$v ) {?>
@@ -57,7 +57,6 @@ $(function (){
 						</tr>
 						<?php }?>
 					</table>
-					<div class="paging">此处是分页</div>
 				</div>
 				<!-- vip 表格 显示 end-->
 			</div>
