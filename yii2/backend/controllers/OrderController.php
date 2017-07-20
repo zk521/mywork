@@ -3,7 +3,6 @@ namespace backend\controllers;
 
 //使用核心控制器
 use yii\web\Controller;
-use yii\web\Tel;
 use yii\web\Session;
 //使用数据库
 use db;
@@ -40,7 +39,6 @@ class OrderController extends Controller
 	 */
 	public function actionSearch(){
 		$data = yii::$app->request->post();
-		// print_r($data);die;
 		$where = '1=1 '; 
 		if(!empty($data['start_time'])){
 			$where .= ' and `add_time` >=' . strtotime($data['start_time']);
@@ -76,6 +74,7 @@ class OrderController extends Controller
 			echo 1;
 		}
 	}
+
 	/**
 	 * 批量删除
 	 */
@@ -89,6 +88,7 @@ class OrderController extends Controller
        		echo 1;
        	}
 	}
+
 	/**
 	 * details 详情
 	 */
@@ -103,6 +103,7 @@ class OrderController extends Controller
 			echo json_encode(['status'=>1, 'msg'=>$success, 'arr'=>$arr]);
 		}
 	}
+
 	/**
 	 * update 修改
 	 */
@@ -118,6 +119,7 @@ class OrderController extends Controller
 			echo 0;
 		}
 	}
+#------------------------------------------------------------------------------------------#
 	//拼接where
 	public function formatUpdate($data)
     {
@@ -136,18 +138,12 @@ class OrderController extends Controller
         }
         return $where;
     }
+
     //查询订单详情表
     public function orderInfo($where= '1=1 ', $table='order_info'){
-		$query = new Query();
-        //查询出所有的数据
-		$data = $query->from($table)->where($where)->all();
-        //统计数据个数
-        $count = count($data);
-        // //实例化分页类
-        $pagination = new Pagination(['totalCount' =>$count, 'pageSize' => 5]);
-
-        $orderInfo = $query->offset($pagination->offset)->limit($pagination->limit)->all();
-
+    	//调取分页
+    	$arr = $this->limit($where, $table);
+    	$orderInfo = $arr['data'];
 		foreach ($orderInfo as $key => $value) {
 			//收件人电话
 			$sql = "select tel from user where id = ". $value['user_id'];
@@ -162,8 +158,8 @@ class OrderController extends Controller
 			$path = yii::$app->db->createCommand($sql)->queryAll();
 			$orderInfo[$key]['path'] = $path[0]['region_name'].$path[1]['region_name'].$path[2]['region_name'];
 		}
-		$arr=['orderInfo'=>$orderInfo, 'pagination' => $pagination];
-		return $arr;
+		$row=['orderInfo'=>$orderInfo, 'pagination' => $arr['pagination']];
+		return $row;
     }
 
     /**
@@ -172,30 +168,18 @@ class OrderController extends Controller
     public function limit($where, $table){
         $query = new Query();
         //查询出所有的数据
-        $orderInfo = $query->from($table)->all();
+        $orderInfo = $query->from($table)->where($where)->all();
 
         //统计数据个数
         $count = count($orderInfo);
-        // //实例化分页类
-        $pagination = new Pagination(['totalCount' => $count]);
-        $pagination->setPageSize(2 );
-        $data = $query->offset($pagination->offset)->limit($pagination->limit)->all();
-        // return $this->render('show', ['data' => $data, 'pagination' => $pagination,]);
+
+        //实例化分页类
+        $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>5]);
+
+        $data = $query->where($where)->offset($pagination->offset)->limit($pagination->limit)->all();
+        // print_r($pagination);
+
+        $arr = ['data' => $data, 'pagination' => $pagination];
+        return $arr;
     }
 }
-/* [id] => 2
-[order_sn] => E34324324
-[order_status] => 1
-[shipping_status] => 1
-[pay_status] => 1
-[message] => 中通
-[goods_amount] => 1000.00
-[order_amount] => 1000.00
-[pay_time] => 1111111111
-[add_time] => 1111111111
-[username ] => 刘琪
-[country] => 0
-[province] => 1
-[city] => 2
-[user_id] => 1
-[bussiness_id] => 1*/
