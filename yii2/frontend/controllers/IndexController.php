@@ -1,6 +1,5 @@
 <?php
 namespace frontend\controllers;
-<<<<<<< HEAD
 
 //使用核心控制器
 use yii\web\Controller;
@@ -22,12 +21,5 @@ class IndexController extends CommonController
 	public function actionIndex()
 	{
 		return $this->renderPartial('index.php');
-=======
-use yii\web\Controller;
-
-class IndexController extends Controller{
-	public function actionIndex(){
-		echo "hello world";
->>>>>>> master
 	}
 }
