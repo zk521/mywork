@@ -32,7 +32,7 @@ $(function (){
 					href="#">会员管理</a>&nbsp;-</span>&nbsp;级别管理
 			</div>
 		</div>
-			<a class="addA addA1" href="?r=vip/add">新增级别+</a> 
+			<a class="addA addA1" href="?r=vip/rankadd">新增级别+</a> 
 		<div class="page">
 			<!-- vip页面样式 -->
 			<div class="vip">
@@ -101,5 +101,7 @@ $(".no").click(function(){
   $(".banDel").hide();
 });
 // 广告弹出框 end
+
+
 </script>
 </html>
