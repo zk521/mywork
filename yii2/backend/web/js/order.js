@@ -162,24 +162,31 @@ $(document).on('click', '.del', function(){
 		if(ids == ''){
 			alert('没有数据');
 		}else{
-		 	$.ajax({      
-			    type:'post',      
-			    url:'?r=order/del',      
-			    data:{      
-			        ids:ids,      
-			    },      
-			    success:function(msg){      
-			        if(msg == 1){      
-			            alert('删除成功');
-			            $("input:checkbox[name='order_id']:checked").each(function() {
-				  			n = $("input:checkbox[name='order_id']:checked").parents('tr').index();
-				    		$('.search').find('tr:eq('+n+')').remove();
-			        	});
-			        }else{      
-			            alert('删除失败'); 
-			        }      
-
-			    }      
-			}) 
+			$(".banDel").show();
+		  	$(".yes").click(function(){
+			  $(".banDel").hide();
+			  	$.ajax({      
+				    type:'post',      
+				    url:'?r=order/del',      
+				    data:{ids:ids},     
+				    success:function(msg){
+				    	if(msg == 1){
+			  				alert('删除成功');
+		  				    $("input:checkbox[name='order_id']:checked").each(function() {
+					  			n = $("input:checkbox[name='order_id']:checked").parents('tr').index();
+					    		$('.search').find('tr:eq('+n+')').remove();
+			        		});
+				  		}else{
+				  			alert('删除失败');
+				  		}
+				    }
+				})
+			});
+			$(".close").click(function(){
+			  $(".banDel").hide();
+			});
+			$(".no").click(function(){
+			  $(".banDel").hide();
+			});
 		}
 	})
