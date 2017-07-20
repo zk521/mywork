@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'www.myshop.com') {
+if($_SERVER['HTTP_HOST'] == 'www.myshop.com') {
     return [
         'components' => [
             'db' => [
@@ -7,6 +7,38 @@ if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == 'www.myshop.
                 'dsn' => 'mysql:host=127.0.0.1;dbname=myshop',
                 'username' => 'root',
                 'password' => 'root',
+<<<<<<< HEAD
+=======
+                'charset' => 'utf8',
+            ],
+            'mailer' => [
+                'class' => 'yii\swiftmailer\Mailer',
+                'useFileTransport' =>false,//这句一定有，false发送邮件，true只是生成邮件在runtime文件夹下，不发邮件
+                'transport' => [
+                    'class' => 'Swift_SmtpTransport',
+                    'host' => 'smtp.163.com',  //每种邮箱的host配置不一样
+                    'username' => 'm17600037299',
+                    'password' => 'm199401m',
+                    'port' => '25',
+                    'encryption' => 'tls',
+
+                ],
+                'messageConfig'=>[
+                    'charset'=>'UTF-8',
+                    'from'=>['m17600037299@163.com'=>'admin']
+                ],
+            ],
+        ],
+    ];
+}else if($_SERVER['HTTP_HOST'] == 'localhost') {
+    return [
+        'components' => [
+            'db' => [
+                'class' => 'yii\db\Connection',
+                'dsn' => 'mysql:host=127.0.0.1;dbname=myshop',
+                'username' => 'root',
+                'password' => 'root',
+>>>>>>> 3ca878418255cd5eda72b75077f83f10e2ce6c7c
                 'charset' => 'utf8',
             ],
             'mailer' => [
