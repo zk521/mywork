@@ -1,0 +1,686 @@
+2017-07-20 20:31:01 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The directory does not exist: D:/phpStudy/WWW/gitshop/yii2/frontend/web/assets' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\AssetManager.php:213
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Object.php(107): yii\web\AssetManager->init()
+#1 [internal function]: yii\base\Object->__construct(Array)
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\AssetMa...', Array, Array)
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php(348): yii\di\Container->get('yii\\web\\AssetMa...', Array, Array)
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\di\ServiceLocator.php(136): yii\BaseYii::createObject(Array)
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(608): yii\di\ServiceLocator->get('assetManager')
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\View.php(225): yii\base\Application->getAssetManager()
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\View.php(285): yii\web\View->getAssetManager()
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('frontend\\assets...')
+#10 D:\phpStudy\WWW\gitshop\yii2\frontend\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#11 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(330): require('D:\\phpStudy\\WWW...')
+#12 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\phpStudy\\WWW...', Array)
+#13 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\SiteController))
+#14 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#15 D:\phpStudy\WWW\gitshop\yii2\frontend\controllers\SiteController.php(75): yii\base\Controller->render('index')
+#16 [internal function]: frontend\controllers\SiteController->actionIndex()
+#17 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#18 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#19 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#20 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#21 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2017-07-20 20:31:01 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/frontend/'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '54605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500553860.872
+    'REQUEST_TIME' => 1500553860
+]
+2017-07-20 20:36:30 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\CommonController' not found' in D:\phpStudy\WWW\gitshop\yii2\frontend\controllers\IndexController.php:17
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(0): yii\BaseYii::autoload()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#7 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-07-20 20:36:30 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '55429'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554190.696
+    'REQUEST_TIME' => 1500554190
+]
+2017-07-20 20:37:12 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CommonController' in file: D:\phpStudy\WWW\gitshop\yii2/frontend/controllers/CommonController.php. Namespace missing?' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php:295
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 D:\phpStudy\WWW\gitshop\yii2\frontend\controllers\IndexController.php(17): spl_autoload_call('frontend\\contro...')
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php(292): include('D:\\phpStudy\\WWW...')
+#3 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#4 [internal function]: spl_autoload_call('frontend\\contro...')
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): class_exists('frontend\\contro...')
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID('index')
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController('index/index')
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-07-20 20:37:12 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '55582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554232.32
+    'REQUEST_TIME' => 1500554232
+]
+2017-07-20 20:37:25 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CommonController' in file: D:\phpStudy\WWW\gitshop\yii2/frontend/controllers/CommonController.php. Namespace missing?' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php:295
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 D:\phpStudy\WWW\gitshop\yii2\frontend\controllers\IndexController.php(17): spl_autoload_call('frontend\\contro...')
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php(292): include('D:\\phpStudy\\WWW...')
+#3 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#4 [internal function]: spl_autoload_call('frontend\\contro...')
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): class_exists('frontend\\contro...')
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID('index')
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController('index/index')
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-07-20 20:37:24 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '55602'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554244.911
+    'REQUEST_TIME' => 1500554244
+]
+2017-07-20 20:37:50 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CommonController' in file: D:\phpStudy\WWW\gitshop\yii2/frontend/controllers/CommonController.php. Namespace missing?' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php:295
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 D:\phpStudy\WWW\gitshop\yii2\frontend\controllers\IndexController.php(17): spl_autoload_call('frontend\\contro...')
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php(292): include('D:\\phpStudy\\WWW...')
+#3 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#4 [internal function]: spl_autoload_call('frontend\\contro...')
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): class_exists('frontend\\contro...')
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID('index')
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController('index/index')
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#9 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-07-20 20:37:50 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '55637'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554270.071
+    'REQUEST_TIME' => 1500554270
+]
+2017-07-20 20:39:18 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "login/log".' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('login/log', Array)
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-20 20:39:18 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'login/log'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '55947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=login/log'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=login/log'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554358.497
+    'REQUEST_TIME' => 1500554358
+]
+2017-07-20 20:40:49 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "login/log".' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('login/log', Array)
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-20 20:40:49 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'login/log'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '56226'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=login/log'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=login/log'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554449.395
+    'REQUEST_TIME' => 1500554449
+]
+2017-07-20 20:40:55 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "login/log".' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('login/log', Array)
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-07-20 20:40:55 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'login/log'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '56312'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=login/log'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=login/log'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554455.354
+    'REQUEST_TIME' => 1500554455
+]
+2017-07-20 20:43:28 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\LoginController' in file: D:\phpStudy\WWW\gitshop\yii2/frontend/controllers/LoginController.php. Namespace missing?' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\BaseYii.php:295
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(633): class_exists('frontend\\contro...')
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID('login')
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController('login/log')
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('login/log', Array)
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-07-20 20:43:28 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'login/log'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/frontend/web/index.php?r=index/index'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '56724'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=login/log'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=login/log'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554608.663
+    'REQUEST_TIME' => 1500554608
+]
+2017-07-20 20:47:11 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\phpStudy\WWW\gitshop\yii2\frontend\views\login\log.php' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\phpStudy\\WWW...', Array, Object(frontend\controllers\LoginController))
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('log.php', Array, Object(frontend\controllers\LoginController))
+#2 D:\phpStudy\WWW\gitshop\yii2\frontend\controllers\LoginController.php(25): yii\base\Controller->renderPartial('log.php')
+#3 [internal function]: frontend\controllers\LoginController->actionLog()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('log', Array)
+#7 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('login/log', Array)
+#8 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\phpStudy\WWW\gitshop\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-07-20 20:47:11 [127.0.0.1][-][7np76sc47v7595m8m7b11prgl0][info][application] $_GET = [
+    'r' => 'login/log'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'vesf4s7dlr7bdhn3s8l6o9dn01'
+    '_csrf-backend' => 'c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"œ‚îƒQêY’Ò<×ëòLd=”@Ù»ñÕƒÏJöp\";}'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-frontend' => '7np76sc47v7595m8m7b11prgl0'
+    '_csrf-frontend' => 'fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"´ø1ú®»ˆ©ñ®GI½“ÜS¶UA˜d=+‘bA¨1\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=vesf4s7dlr7bdhn3s8l6o9dn01; _csrf-backend=c0a6377f94aca775b024a1a175ae7a5e1d95cd0ffa6d5ddd52a68553e2ba44eda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9C%82%EE%83Q%EAY%92%D2%3C%D7%EB%1B%16%F2Ld%3D%94%40%D9%BB%F1%10%D5%83%17%1A%CFJ%F6p%22%3B%7D; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-frontend=7np76sc47v7595m8m7b11prgl0; _csrf-frontend=fc8a090708b0167c9c9250c896724f8fea1e98d9f454651b33f36a8ae036a36ca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B4%F8%031%FA%AE%0B%BB%88%A9%F1%AEGI%BD%93%DCS%B6UA%05%98d%14%3D%2B%91bA%A81%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\å®‰è£…\\git\\gitå®‰è£…\\Git\\cmd;D:\\;è£…\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/frontend/web/index.php'
+    'REMOTE_PORT' => '57145'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=login/log'
+    'REQUEST_URI' => '/gitshop/yii2/frontend/web/index.php?r=login/log'
+    'SCRIPT_NAME' => '/gitshop/yii2/frontend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500554831.05
+    'REQUEST_TIME' => 1500554831
+]

@@ -7,8 +7,6 @@ if($_SERVER['HTTP_HOST'] == 'www.myshop.com') {
                 'dsn' => 'mysql:host=127.0.0.1;dbname=myshop',
                 'username' => 'root',
                 'password' => 'root',
-<<<<<<< HEAD
-=======
                 'charset' => 'utf8',
             ],
             'mailer' => [
@@ -38,7 +36,6 @@ if($_SERVER['HTTP_HOST'] == 'www.myshop.com') {
                 'dsn' => 'mysql:host=127.0.0.1;dbname=myshop',
                 'username' => 'root',
                 'password' => 'root',
->>>>>>> 3ca878418255cd5eda72b75077f83f10e2ce6c7c
                 'charset' => 'utf8',
             ],
             'mailer' => [
