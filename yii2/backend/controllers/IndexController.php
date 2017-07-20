@@ -22,4 +22,11 @@ class IndexController extends CommonController
 	{
 		return $this->renderPartial('index.php');
 	}
+	/**
+	 * 退出
+	 */
+	public function actionMain()
+	{
+		return $this->renderPartial('main.php');
+	}
 }
