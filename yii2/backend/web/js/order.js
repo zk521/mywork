@@ -18,7 +18,6 @@ $(document).on('click', '.button', function(){
 			if(obj.status == 0) {
 				alert(obj.msg);
 			}else{
-				var page = "<?= LinkPager::widget(['pagination' => "+obj.pagination+"]); ?>";
 				$.each(obj.orderInfo,function(k,v){
 					var order_status= '';
 					var pay_status= '';
@@ -56,7 +55,8 @@ $(document).on('click', '.button', function(){
 					str +='<tr order-info-id="'+v.id+'"><td><input name="order_id" type="checkbox" value="'+v.id+'" /></td><td><span class="details" id="'+v.id+'">'+v.order_sn+'</span></td><td>'+v.add_time+'</td><td><span class="status" stype="order_status" status="'+v.order_status+'">'+order_status+'</span></td><td><span class="status" stype="pay_status" status="'+v.pay_status+'">'+pay_status+'</span></td><td>'+v.pay_time+'</td><td><span class="status" stype="shipping_status" status="'+v.shipping_status+'">'+shipping_status+'</span></td><td>'+v.message+'</td><td>'+v.username+'</td><td>'+v.tel+'</td><td>'+v.path+'</td><td><a href="connoisseuradd.html"><img class="operation"src="img/update.png"></a> <img class="operation delban"src="img/delete.png"></td></tr>';
 				});
 				$('.search').html(str);
-				$('.paging').html(page);
+
+				$('.page').html(obj.pagination.pagination);
 			}
 		}
 	})
@@ -153,40 +153,73 @@ $(document).on('click', '.status', function(){
 		}
 	})  
 });
+//全选全不选
+$(document).on('click', "#all", function(){
+	var isChecked = $(this).prop("checked");
+	$(".search :checkbox").prop("checked", isChecked);
+});
 //批量删除
 $(document).on('click', '.del', function(){
-		var ids = '';
-		 $("input:checkbox[name='order_id']:checked").each(function() {
-            ids += $(this).val() + ",";
-        });
-		if(ids == ''){
-			alert('没有数据');
-		}else{
-			$(".banDel").show();
-		  	$(".yes").click(function(){
-			  $(".banDel").hide();
-			  	$.ajax({      
-				    type:'post',      
-				    url:'?r=order/del',      
-				    data:{ids:ids},     
-				    success:function(msg){
-				    	if(msg == 1){
-			  				alert('删除成功');
-		  				    $("input:checkbox[name='order_id']:checked").each(function() {
-					  			n = $("input:checkbox[name='order_id']:checked").parents('tr').index();
-					    		$('.search').find('tr:eq('+n+')').remove();
-			        		});
-				  		}else{
-				  			alert('删除失败');
-				  		}
-				    }
-				})
-			});
-			$(".close").click(function(){
-			  $(".banDel").hide();
-			});
-			$(".no").click(function(){
-			  $(".banDel").hide();
-			});
-		}
-	})
+	var ids = '';
+	 $("input:checkbox[name='order_id']:checked").each(function() {
+        ids += $(this).val() + ",";
+    });
+	if(ids == ''){
+		alert('没有数据');
+	}else{
+		$(".banDel").show();
+	  	$(".yes").click(function(){
+		  $(".banDel").hide();
+		  	$.ajax({      
+			    type:'post',      
+			    url:'?r=order/del',      
+			    data:{ids:ids},     
+			    success:function(msg){
+			    	if(msg == 1){
+		  				alert('删除成功');
+	  				    $("input:checkbox[name='order_id']:checked").each(function() {
+				  			n = $("input:checkbox[name='order_id']:checked").parents('tr').index();
+				    		$('.search').find('tr:eq('+n+')').remove();
+		        		});
+			  		}else{
+			  			alert('删除失败');
+			  		}
+			    }
+			})
+		});
+		$(".close").click(function(){
+		  $(".banDel").hide();
+		});
+		$(".no").click(function(){
+		  $(".banDel").hide();
+		});
+	}
+})
+//单删
+$(document).on('click',".delban", function(){
+	var _this = $(this);
+	var id = _this.parents('tr').attr('order-info-id');
+  	$(".banDel").show();
+  	$(".yes").click(function(){
+	  $(".banDel").hide();
+	  	$.ajax({      
+		    type:'get',      
+		    url:'?r=order/delete',      
+		    data:{id:id},     
+		    success:function(msg){
+		    	if(msg == 1){
+	  				alert('删除成功');
+	  				_this.parents('tr').remove();
+		  		}else{
+		  			alert('删除失败');
+		  		}
+		    }
+		})
+	});
+	$(".close").click(function(){
+	  $(".banDel").hide();
+	});
+	$(".no").click(function(){
+	  $(".banDel").hide();
+	});
+});
