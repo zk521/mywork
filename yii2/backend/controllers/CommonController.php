@@ -18,7 +18,7 @@ class CommonController extends Controller
         $username=yii::$app->session->get('username');
         //判断是否有登录session
         if(!isset($username)){
-            echo "<script>alert('请先登录');location.href='index.php?r=login/log'</script>";die;
+            echo "<script>alert('请先登录');location.href='index.php?r=login/index'</script>";die;
         }
         //设置超级管理员
         if($username=="周可"){
