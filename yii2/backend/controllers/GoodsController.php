@@ -193,9 +193,9 @@ class GoodsController extends Controller
         echo json_encode($arr);
     }
     //生成sku
-    private function sku($data){
+    private function asku($data){
         $arr = array();
-        foreach($data[0] as $k=>$v){
+        
         foreach($data[0] as $k=>$v){
             $arr[] = array($v);
         }
@@ -215,6 +215,7 @@ class GoodsController extends Controller
 
     //sku入库
     public function actionSku_add(){
+
         $data = yii::$app->request->post();
         foreach($data as $k=>$v){
             foreach($v as $k1=>$v1){

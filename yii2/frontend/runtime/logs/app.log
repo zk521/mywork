@@ -2875,3 +2875,1017 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500619890.9669
     'REQUEST_TIME' => 1500619890
 ]
+2017-07-21 16:20:59 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '*'' in F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 16:20:59 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1788'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6362'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/inc/menu.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500625259.0069
+    'REQUEST_TIME' => 1500625259
+]
+2017-07-21 16:21:34 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '*'' in F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 16:21:34 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1788'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6373'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/inc/menu.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500625294.719
+    'REQUEST_TIME' => 1500625294
+]
+2017-07-21 16:22:38 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '*'' in F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 16:22:38 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1788'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6396'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/inc/menu.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500625358.4406
+    'REQUEST_TIME' => 1500625358
+]
+2017-07-21 16:25:09 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Controller::renderPartial(), called in F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php on line 24 and defined' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php:409
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(409): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'F:\\WWW\\2017_7\\y...', 409, Array)
+#1 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(24): yii\base\Controller->renderPartial()
+#2 [internal function]: frontend\controllers\PayController->actionPay()
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('pay', Array)
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pay/pay', Array)
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-07-21 16:25:09 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1788'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6410'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/inc/menu.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500625509.5742
+    'REQUEST_TIME' => 1500625509
+]
+2017-07-21 16:25:41 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: goods_id' in F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php:36
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\WWW\\2017_7\\y...', 36, Array)
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(330): require('F:\\WWW\\2017_7\\y...')
+#2 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\\WWW\\2017_7\\y...', Array)
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\\WWW\\2017_7\\y...', Array, Object(frontend\controllers\PayController))
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('pay.php', Array, Object(frontend\controllers\PayController))
+#5 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(24): yii\base\Controller->renderPartial('pay.php', Array)
+#6 [internal function]: frontend\controllers\PayController->actionPay()
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('pay', Array)
+#10 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pay/pay', Array)
+#11 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-07-21 16:25:41 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1788'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6417'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/inc/menu.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500625541.4851
+    'REQUEST_TIME' => 1500625541
+]
+2017-07-21 16:25:46 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: goods_id' in F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php:36
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\WWW\\2017_7\\y...', 36, Array)
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(330): require('F:\\WWW\\2017_7\\y...')
+#2 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\\WWW\\2017_7\\y...', Array)
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\\WWW\\2017_7\\y...', Array, Object(frontend\controllers\PayController))
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('pay.php', Array, Object(frontend\controllers\PayController))
+#5 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(24): yii\base\Controller->renderPartial('pay.php', Array)
+#6 [internal function]: frontend\controllers\PayController->actionPay()
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('pay', Array)
+#10 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pay/pay', Array)
+#11 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-07-21 16:25:46 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1788'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6425'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/inc/menu.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500625546.2353
+    'REQUEST_TIME' => 1500625546
+]
+2017-07-21 16:48:20 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$info' (T_VARIABLE)' in F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php:40
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 16:48:20 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1936'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6491'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500626900.1738
+    'REQUEST_TIME' => 1500626900
+]
+2017-07-21 16:49:08 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$info' (T_VARIABLE)' in F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php:41
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 16:49:08 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1936'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'QUERY_STRING' => 'r=pay/pay'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6497'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500626948.8116
+    'REQUEST_TIME' => 1500626948
+]
+2017-07-21 16:49:29 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_price.pay.id' in 'on clause'' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(41): yii\db\Command->queryOne()
+#3 [internal function]: frontend\controllers\PayController->actionPay_list()
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_price.pay.id' in 'on clause'
+The SQL being executed was: SELECT * FROM `pay_method` left join `pay_price` ON pay_price.pay.id  = pay_method.pay_id' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(41): yii\db\Command->queryOne()
+#3 [internal function]: frontend\controllers\PayController->actionPay_list()
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'pay_price.pay.id' in 'on clause'
+)
+
+2017-07-21 16:49:28 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay_list'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1868'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_list'
+    'QUERY_STRING' => 'r=pay/pay_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6504'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500626968.9427
+    'REQUEST_TIME' => 1500626968
+]
+2017-07-21 16:53:00 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'pay_id'' in F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php:41
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php(41): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', 'F:\\WWW\\2017_7\\y...', 41, Array)
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(330): require('F:\\WWW\\2017_7\\y...')
+#2 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\\WWW\\2017_7\\y...', Array)
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\\WWW\\2017_7\\y...', Array, Object(frontend\controllers\PayController))
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('pay.php', Array, Object(frontend\controllers\PayController))
+#5 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(43): yii\base\Controller->renderPartial('pay.php', Array)
+#6 [internal function]: frontend\controllers\PayController->actionPay_list()
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('pay_list', Array)
+#10 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pay/pay_list', Array)
+#11 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-07-21 16:53:00 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay_list'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1868'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_list'
+    'QUERY_STRING' => 'r=pay/pay_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6514'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500627180.2978
+    'REQUEST_TIME' => 1500627180
+]
+2017-07-21 16:53:36 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'pay_id'' in F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php:41
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay.php(41): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', 'F:\\WWW\\2017_7\\y...', 41, Array)
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(330): require('F:\\WWW\\2017_7\\y...')
+#2 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\\WWW\\2017_7\\y...', Array)
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\\WWW\\2017_7\\y...', Array, Object(frontend\controllers\PayController))
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('pay.php', Array, Object(frontend\controllers\PayController))
+#5 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(43): yii\base\Controller->renderPartial('pay.php', Array)
+#6 [internal function]: frontend\controllers\PayController->actionPay_list()
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('pay_list', Array)
+#10 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pay/pay_list', Array)
+#11 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-07-21 16:53:36 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay_list'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1868'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_list'
+    'QUERY_STRING' => 'r=pay/pay_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6520'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500627216.1078
+    'REQUEST_TIME' => 1500627216
+]
+2017-07-21 16:53:52 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'pay_name'' in F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay_list.php:41
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay_list.php(41): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', 'F:\\WWW\\2017_7\\y...', 41, Array)
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(330): require('F:\\WWW\\2017_7\\y...')
+#2 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\\WWW\\2017_7\\y...', Array)
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\\WWW\\2017_7\\y...', Array, Object(frontend\controllers\PayController))
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('pay_list.php', Array, Object(frontend\controllers\PayController))
+#5 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(43): yii\base\Controller->renderPartial('pay_list.php', Array)
+#6 [internal function]: frontend\controllers\PayController->actionPay_list()
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('pay_list', Array)
+#10 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pay/pay_list', Array)
+#11 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-07-21 16:53:52 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay_list'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1868'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_list'
+    'QUERY_STRING' => 'r=pay/pay_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6525'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500627232.4238
+    'REQUEST_TIME' => 1500627232
+]
+2017-07-21 17:05:31 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$id' (T_VARIABLE)' in F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php:49
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 17:05:31 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay_list'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '472'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_list'
+    'QUERY_STRING' => 'r=pay/pay_list'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6608'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500627931.6868
+    'REQUEST_TIME' => 1500627931
+]
+2017-07-21 17:07:49 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'pay_id' in where clause is ambiguous' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(62): yii\db\Command->queryAll()
+#3 [internal function]: frontend\controllers\PayController->actionPay_up()
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'pay_id' in where clause is ambiguous
+The SQL being executed was: SELECT * FROM `pay_method` right join `pay_price` ON pay_price.pay_id  = pay_method.pay_id WHERE pay_id = 1 and id =2' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(62): yii\db\Command->queryAll()
+#3 [internal function]: frontend\controllers\PayController->actionPay_up()
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'pay_id' in where clause is ambiguous
+)
+
+2017-07-21 17:07:49 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay_up'
+    'id' => '2'
+    'pay_id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '472'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_up&id=2&pay_id=1'
+    'QUERY_STRING' => 'r=pay/pay_up&id=2&pay_id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6623'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500628069.5517
+    'REQUEST_TIME' => 1500628069
+]
+2017-07-21 17:12:19 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}', expecting ',' or ';'' in F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay_up.php:41
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 17:12:19 [127.0.0.1][-][0idgjnrl88fbeqkh27d76v4bs2][info][application] $_GET = [
+    'r' => 'pay/pay_up'
+    'id' => '2'
+    'pay_id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0idgjnrl88fbeqkh27d76v4bs2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '468'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_up&id=2&pay_id=1'
+    'QUERY_STRING' => 'r=pay/pay_up&id=2&pay_id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '6639'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=0idgjnrl88fbeqkh27d76v4bs2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500628339.9041
+    'REQUEST_TIME' => 1500628339
+]
