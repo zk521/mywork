@@ -21,9 +21,6 @@ class GoodsController extends Controller
     public $enableCsrfValidation = false;
 
 
-    public function actionGoods2(){
-        return $this->renderPartial('goods_info.php');
-    }
     //无限极下拉
     private function Infinite($data,$num=0,$lever=0){
         static $tree  = array();
@@ -284,7 +281,27 @@ class GoodsController extends Controller
 
     //商品搜索
     public function actionSou(){
-        yii::$app->request->post('');
+        $brand_id = yii::$app->request->post('brand_id');
+        $cat_id = yii::$app->request->post('cat_id');
+        $keyword = yii::$app->request->post('keyword');
+        $where = '1=1 ';
+        if(!empty($brand_id)){
+            $where .= ' and brand_id = '.$brand_id;
+        }
+        if(!empty($cat_id)){
+            $where .= ' and category_id = '.$cat_id;
+        }
+        if(!empty($keyword)){
+            $where .= " and goods_name like '%".$keyword."%'";
+        }
+        $sql = 'select * from goods where '.$where;
+        $data = yii::$app->db->createCommand($sql)->queryAll();
+        if(empty($data)){
+            echo json_encode(1);
+        }else{
+            echo json_encode($data);
+        }
+        
     }
 
 }

@@ -129,10 +129,11 @@
             })
         })
 
-        $('#sou').click(function(){
+ $('#sou').click(function(){
             var brand_id = $('#brand_id').val();
             var cat_id = $('#cat_id').val();
             var keyword = $('#keyword').val();
+            var str = '';
             $.ajax({
                 type:'post',
                 url :'index.php?r=goods/sou',
@@ -141,11 +142,29 @@
                     cat_id:cat_id,
                     keyword:keyword
                 },
+                dataType:'json',
                 success:function(data){
-                    alert(data);
+                    if(data==1){
+                        str +='暂无数据';
+                    }else{
+                        $.each(data,function(k,v){
+                            str += '<tr><td align="center"><input type="checkbox" name="checkboxes[]" value=""></td><td class="first-cell" align="center"><span>'+v['goods_name']+'</span></td><td align="center"><span>'+v['goods_sn']+'</span></td><td align="center"><span onclick="">'+v['goods_number']+'</span></td><td align="center"><span onclick="">';
+                            if(v['is_reviewed']==0){
+                                str += "未审核";
+                            }else{
+                                str += "已审核";
+                            }
+                            str +='</span></td><td align="center"><input type="hidden" name="goods_id" value="'+v['id']+'"/><a href="../goods.php?id=32" target="_blank" title="查看"><img src="good_img/icon_view.gif" width="16" height="16" border="0"></a><a href="goods.php?act=edit&amp;goods_id=32" title="编辑"><img src="good_img/icon_edit.gif" width="16" height="16" border="0"></a><a href="index.php?r=goods/goods_sku&&id='+v['id']+'" title="生成sku"><img src="good_img/icon_copy.gif" width="16" height="16" border="0"></a><a href="javascript:;" onclick="listTable.remove(32, '+'您确实要把该商品放入回收站吗？'+')" class="del_goods" title="回收站"><img src="good_img/icon_trash.gif" width="16" height="16" border="0"></a><a href="goods.php?act=product_list&amp;goods_id=32" title="货品列表"><img src="good_img/icon_docs.gif" width="16" height="16" border="0"></a></td></tr>';
+                        })
+                       
+                    }
+                    
+                    $('#goods_info_tbody').html(str);
+        
                 }
             })
         })
+       
     })
 </script>
 </html>
