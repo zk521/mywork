@@ -196,6 +196,7 @@ class GoodsController extends Controller
     private function sku($data){
         $arr = array();
         foreach($data[0] as $k=>$v){
+        foreach($data[0] as $k=>$v){
             $arr[] = array($v);
         }
         for($i=1;$i<count($data);$i++){
