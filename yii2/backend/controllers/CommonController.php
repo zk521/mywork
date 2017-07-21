@@ -49,7 +49,7 @@ class CommonController extends Controller
                 $role[] = $value['role_name'];
                 $c_a[] = $value['controller'].','.$value['action'];
             }
-            if(in_array("超级管理员sss", $role)){
+            if(in_array("超级管理员", $role)){
                 return true;
             }else if(in_array($aa, $c_a)){
                 return true;
