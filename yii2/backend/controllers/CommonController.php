@@ -9,6 +9,8 @@ use yii\web\Session;
 use db;
 //使用核心组件
 use yii;
+use yii\db\Query;
+
 class CommonController extends Controller
 {
 	public $enableCsrfValidation = false;
@@ -19,45 +21,42 @@ class CommonController extends Controller
         //判断是否有登录session
         if(!isset($root_id)){
             echo "<script>alert('请先登录');location.href='index.php?r=login/index'</script>";die;
-        }
-        //设置超级管理员
-        $sql="select role_id,role_name from premission inner join role on premission.role_id=role.id  where admin_id= $root_id";
-        $role = $db->createCommand($sql)->queryOne();
-       
-        $role_name=$role['role_name'];
-        $role_id=$role['role_id'];
-        if($role_name=="超级管理员"){
-            return true;
-        }
+        }   
         //判断权限
         $ctl=Yii::$app->controller->id;     //获取当前访问的控制器
 
         $action=Yii::$app->controller->action->id;     //获取当前访问的方法
-        
+        $aa = $ctl.','.$action;
+        $bb=['index,index','index,main','index,head'];
         //当访问后台是首页权限是公共的
-        if($ctl=="index" && $action=="index"){
+        if(in_array($aa,$bb)){
             return true;
+        }else{
+            //设置超级管理员
+            $query = new Query();
+            $data = $query
+                ->select('r.role_name,n.controller,n.action')
+                ->from('admin')
+                ->join('LEFT JOIN','premission p_a','p_a.admin_id=admin.id')
+                ->join('LEFT JOIN','role r','r.id=p_a.role_id')
+                ->join('LEFT JOIN','privillage p_n','p_n.role_id=r.id')
+                ->join('LEFT JOIN','node n','n.id=p_n.node_id')
+                ->where('admin.id='.$root_id)
+                ->all();
+            $role=[];
+            $c_a =[];
+            foreach ($data as $key => $value) {
+                $role[] = $value['role_name'];
+                $c_a[] = $value['controller'].','.$value['action'];
+            }
+            if(in_array("超级管理员sss", $role)){
+                return true;
+            }else if(in_array($aa, $c_a)){
+                return true;
+            }else{
+                echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/main'</script>";
+            }
         }
-       
-        $sql1="select * from privillage where role_id='$role_id'";
-        $arr = $db->createCommand($sql1)->queryOne();
-        $node_id=$arr['node_id'];
-        $sql2="select * from node where id='$node_id'";
-        $res=$db->createCommand($sql2)->queryAll();//查询出该角色的权限
-        if($res){
-            foreach($res as $key => $val){
-                if($val['controller']==$ctl && $val['action']==$action){
-                    return true;
-                }
-             }
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
-            return false;
-        }
-        else{
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
-        }
-        
-
         if (!parent::beforeAction($action)) {
             return false;
         }

@@ -8,7 +8,7 @@ use backend\models\Bussiness;
 use yii\db\Query;
 use yii\data\Pagination;
 
-class MoneyController extends controller
+class MoneyController extends CommonController
 {
 	public $enableCsrfValidation = false;
 	public function actionIndex(){

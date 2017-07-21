@@ -27597,3 +27597,2895 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500609313.3319
     'REQUEST_TIME' => 1500609313
 ]
+2017-07-21 13:44:00 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:00')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:43:59 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58492'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615839.9458
+    'REQUEST_TIME' => 1500615839
+]
+2017-07-21 13:44:02 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:02')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:01 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58494'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615841.9651
+    'REQUEST_TIME' => 1500615841
+]
+2017-07-21 13:44:02 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:02')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:02 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58496'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615842.4411
+    'REQUEST_TIME' => 1500615842
+]
+2017-07-21 13:44:02 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:02')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:02 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58498'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615842.6354
+    'REQUEST_TIME' => 1500615842
+]
+2017-07-21 13:44:02 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:02')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:02 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58500'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615842.8183
+    'REQUEST_TIME' => 1500615842
+]
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:03')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58502'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615843.0116
+    'REQUEST_TIME' => 1500615843
+]
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:03')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58504'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615843.1951
+    'REQUEST_TIME' => 1500615843
+]
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:03')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58506'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615843.3799
+    'REQUEST_TIME' => 1500615843
+]
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:03')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58508'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615843.5633
+    'REQUEST_TIME' => 1500615843
+]
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:03')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58510'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615843.7631
+    'REQUEST_TIME' => 1500615843
+]
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:04')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:03 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58512'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615843.9562
+    'REQUEST_TIME' => 1500615843
+]
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:04')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58514'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615844.1482
+    'REQUEST_TIME' => 1500615844
+]
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:04')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58516'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615844.3212
+    'REQUEST_TIME' => 1500615844
+]
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:04')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58518'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615844.5056
+    'REQUEST_TIME' => 1500615844
+]
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:04')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58520'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615844.6836
+    'REQUEST_TIME' => 1500615844
+]
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:04')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:04 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58522'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615844.8591
+    'REQUEST_TIME' => 1500615844
+]
+2017-07-21 13:44:08 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES (' 超级管理员', '2017-07-21 13:44:08')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:08 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => ' 超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58525'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '56'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615848.4241
+    'REQUEST_TIME' => 1500615848
+]
+2017-07-21 13:44:14 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES ('超级管理员', '2017-07-21 13:44:14')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:44:14 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => '超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58524'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'CONTENT_LENGTH' => '55'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500615854.0061
+    'REQUEST_TIME' => 1500615854
+]
+2017-07-21 13:48:30 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'role_time' in 'field list'
+The SQL being executed was: INSERT INTO `role` (`role_name`, `role_time`) VALUES ('超级管理员', '2017-07-21 13:48:30')' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ro...')
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\AdminController.php(63): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\AdminController->actionRole_add()
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('role_add', Array)
+#6 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/role_add', Array)
+#7 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'role_time' in 'field list'
+)
+
+2017-07-21 13:48:30 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'admin/role_add'
+]
+
+$_POST = [
+    'role_name' => '超级管理员'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/index.php?r=admin/role_add'
+    'QUERY_STRING' => 'r=admin/role_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58788'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=admin/role'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_ORIGIN' => 'http://www.myshop.com'
+    'CONTENT_LENGTH' => '55'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616110.682
+    'REQUEST_TIME' => 1500616110
+]
+2017-07-21 13:58:43 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: role_id' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:46
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\Users\\hh\\Doc...', 46, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 13:58:43 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2340'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59738'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616723.5243
+    'REQUEST_TIME' => 1500616723
+]
+2017-07-21 13:58:45 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: role_id' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:46
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\Users\\hh\\Doc...', 46, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 13:58:45 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2340'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59739'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616725.7797
+    'REQUEST_TIME' => 1500616725
+]
+2017-07-21 13:58:47 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: role_id' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:46
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\Users\\hh\\Doc...', 46, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 13:58:47 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2340'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59745'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616727.2147
+    'REQUEST_TIME' => 1500616727
+]
+2017-07-21 13:58:48 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: role_id' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:46
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\Users\\hh\\Doc...', 46, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 13:58:48 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2340'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59746'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616728.3048
+    'REQUEST_TIME' => 1500616728
+]
+2017-07-21 13:58:49 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: role_id' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:46
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\Users\\hh\\Doc...', 46, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 13:58:49 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2340'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59751'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616729.7407
+    'REQUEST_TIME' => 1500616729
+]
+2017-07-21 13:58:50 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: role_id' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:46
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\Users\\hh\\Doc...', 46, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 13:58:50 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2340'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59752'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616730.6594
+    'REQUEST_TIME' => 1500616730
+]
+2017-07-21 13:58:52 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: role_id' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:46
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\Users\\hh\\Doc...', 46, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 13:58:51 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2340'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59755'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500616731.874
+    'REQUEST_TIME' => 1500616731
+]
+2017-07-21 14:24:46 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: common/head' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('common/head', Array)
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-21 14:24:46 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'common/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=common/head'
+    'QUERY_STRING' => 'r=common/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62375'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500618286.2612
+    'REQUEST_TIME' => 1500618286
+]
+2017-07-21 14:24:50 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: common/head' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('common/head', Array)
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-21 14:24:50 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'common/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+    '_csrf-backend' => '4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\",F���2\'�40tF��CaXa��U��O�h�3�\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2272'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=common/head'
+    'QUERY_STRING' => 'r=common/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62375'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6; _csrf-backend=4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%2CF%B8%EF%C22%27%844%030tF%E6%DBC%03a%16Xa%B9%F5U%9B%E4O%94h%EA3%D8%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500618290.4165
+    'REQUEST_TIME' => 1500618290
+]
+2017-07-21 14:28:55 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:38
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(38): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\Users\\hh\\Doc...', 38, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 14:28:55 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+    '_csrf-backend' => '4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\",F���2\'�40tF��CaXa��U��O�h�3�\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2236'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62739'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6; _csrf-backend=4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%2CF%B8%EF%C22%27%844%030tF%E6%DBC%03a%16Xa%B9%F5U%9B%E4O%94h%EA3%D8%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500618535.5758
+    'REQUEST_TIME' => 1500618535
+]
+2017-07-21 14:28:57 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:38
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(38): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\Users\\hh\\Doc...', 38, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 14:28:57 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+    '_csrf-backend' => '4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\",F���2\'�40tF��CaXa��U��O�h�3�\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2236'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62741'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6; _csrf-backend=4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%2CF%B8%EF%C22%27%844%030tF%E6%DBC%03a%16Xa%B9%F5U%9B%E4O%94h%EA3%D8%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500618537.7019
+    'REQUEST_TIME' => 1500618537
+]
+2017-07-21 14:30:11 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: role_name' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:36
+Stack trace:
+#0 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php(36): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\Users\\hh\\Doc...', 36, Array)
+#1 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('head', Array)
+#3 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/head', Array)
+#4 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-07-21 14:30:11 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
+    '_csrf-backend' => '4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\",F���2\'�40tF��CaXa��U��O�h�3�\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'username' => '周可'
+    'root' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2236'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62885'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=2507fl1kon9abqn2mcrk764oo6; _csrf-backend=4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%2CF%B8%EF%C22%27%844%030tF%E6%DBC%03a%16Xa%B9%F5U%9B%E4O%94h%EA3%D8%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.myshop.com/yii2/backend/web/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500618611.1247
+    'REQUEST_TIME' => 1500618611
+]
+2017-07-21 15:06:38 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:50
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 15:06:38 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2356'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49934'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Mobile Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500620798.6117
+    'REQUEST_TIME' => 1500620798
+]
+2017-07-21 15:31:32 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:32
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 15:31:32 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2128'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51336'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500622292.1339
+    'REQUEST_TIME' => 1500622292
+]
+2017-07-21 15:31:49 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:32
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 15:31:48 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2196'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51350'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500622308.9657
+    'REQUEST_TIME' => 1500622308
+]
+2017-07-21 15:31:50 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in C:\Users\hh\Documents\GitHub\mywork\yii2\backend\controllers\CommonController.php:32
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-07-21 15:31:50 [127.0.0.1][-][nlsknqj1e1dcsofajsd9lvcv80][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '1'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php\\php-5.6.27-nts;D:\\phpStudy\\MySQL\\bin;D:\\mysql-5.5.53-win32\\bin;C:\\Users\\hh\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2196'
+    'SCRIPT_NAME' => '/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/yii2/backend/web/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51351'
+    'SCRIPT_FILENAME' => 'C:/Users/hh/Documents/GitHub/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/hh/Documents/GitHub/mywork'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.myshop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'advanced-backend=nlsknqj1e1dcsofajsd9lvcv80'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.myshop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500622310.7512
+    'REQUEST_TIME' => 1500622310
+]

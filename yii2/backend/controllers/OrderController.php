@@ -18,7 +18,7 @@ use yii\db\Query;
 /**
  * Site controller
  */
-class OrderController extends Controller
+class OrderController extends CommonController
 {
 	public $enableCsrfValidation = false;
 
