@@ -17,11 +17,16 @@ class CommonController extends Controller
         $root_id  = Yii::$app->session->get('root');
         $username=yii::$app->session->get('username');
         //判断是否有登录session
-        if(!isset($username)){
+        if(!isset($root_id)){
             echo "<script>alert('请先登录');location.href='index.php?r=login/index'</script>";die;
         }
         //设置超级管理员
-        if($username=="周可"){
+        $sql="select role_id,role_name from premission inner join role on premission.role_id=role.id  where admin_id= $root_id";
+        $role = $db->createCommand($sql)->queryOne();
+       
+        $role_name=$role['role_name'];
+        $role_id=$role['role_id'];
+        if($role_name=="超级管理员"){
             return true;
         }
         //判断权限
@@ -33,27 +38,23 @@ class CommonController extends Controller
         if($ctl=="index" && $action=="index"){
             return true;
         }
-        $root_id  = Yii::$app->session->get('root');       //接到用户登录时存的id
-        $sql="select role_id from premission where admin_id= $root_id";
-            $role_id = $db->createCommand($sql)->queryOne();
-            $role_id=$role_id['role_id'];
-            $sql1="select node_id from privillage where role_id= '$role_id'";
-            $node_id = $db->createCommand($sql1)->queryOne();
-            $node_id=$node_id['node_id'];
-
-            $sql2="select controller,action from node where id='$node_id'";
-            $res=$db->createCommand($sql2)->queryAll();//查询出该角色的权限
+       
+        $sql1="select * from privillage where role_id='$role_id'";
+        $arr = $db->createCommand($sql1)->queryOne();
+        $node_id=$arr['node_id'];
+        $sql2="select * from node where id='$node_id'";
+        $res=$db->createCommand($sql2)->queryAll();//查询出该角色的权限
         if($res){
             foreach($res as $key => $val){
                 if($val['controller']==$ctl && $val['action']==$action){
                     return true;
                 }
              }
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/main'</script>";
+            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
             return false;
         }
         else{
-            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/main'</script>";
+            echo "<script>alert('抱歉，您的权限不够');location.href='index.php?r=index/index'</script>";
         }
         
 

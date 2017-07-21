@@ -26,28 +26,39 @@
                     <table border="1" cellspacing="0" cellpadding="0" class="tab">
                    
                        
+                   <tr>
                       
-                  <tr>
-                           <select name="id">
+                      <td width="435px" class="tdColor">已经有的角色名称</td>
+                      <td width="435px" class="tdColor">绑定角色</td>
+                   </tr> 
+                 
+                     
+                   
+                  <tr height="60px">  
+                   
+                   <td><?=$role_name?></td>
+                   <td><select name="id" class="change">
                              <option value="0">请选择----</option>
-                             <?php  foreach ($role as $k => $v) { ?>
+                             <?php  foreach ($role_list as $k => $v) { ?>
                                <option  value="<?=$v['id']?>"><?=$v['role_name']?></option>
                              <?php  } ?>    
                            </select>
-                  </tr>
-                  
-                  
-                    <tr>
+                      </td>
+                  </tr> 
+                  <tr>
                         <td>
-                            <input type="text" name="admin_id" value="<?php echo $admin_id ;?>"/>
+                            <input type="hidden" name="admin_id" value="<?php echo $admin_id ;?>"/>
                         </td>
-
-                       
-                        <td><input type="submit" value="提交"></td>
-                    </tr>
+           
+                  </tr>
+                  <p class="bbDP">
+                    <input type="submit" value="提交"/class="btn_ok btn_no">
+                    <a class="btn_ok btn_no" href="#">取消</a>
+                   </p>
 
                     </table>
                     </form>
+                  
                     <div class="paging">此处是分页</div>
                 </div>
                 <!-- user 表格 显示 end-->

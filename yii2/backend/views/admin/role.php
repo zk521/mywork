@@ -34,9 +34,10 @@
 						<tr>
 							<td width="66px" class="tdColor tdC">序号</td>
 							<td width="435px" class="tdColor">角色名称</td>
-
-						   
+							
+						     
 							<td width="130px" class="tdColor">操作</td>
+							<td width="150px" class="tdColor">角色赋权</td>
 						</tr>
 						<?php foreach ($result as $k => $v) {  ?>
 							
@@ -48,6 +49,7 @@
 							<td><a href="connoisseuradd.html"><img class="operation"
 									src="img/update.png"></a> <img class="operation delban"
 								src="img/delete.png"></td>
+							<td><a href="?r=admin/privillage&role_id=<?=$v['id']?>">角色赋权</a></td>	
 						</tr>
 						<?php  } ?>
 

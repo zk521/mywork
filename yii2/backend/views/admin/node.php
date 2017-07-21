@@ -26,8 +26,8 @@
 						    <input class="node_name" type="text"  placeholder="输入权限名" />&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
 							<input class="controller" type="text" placeholder="输入控制器" />&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
 							<input class="action"  type="text"     placeholder="输入方法" />
-							<input type="text" class="admin_id" value="<?=$admin_id?>" />
-s							<button class="userbtn">添加</button>
+							
+							<button class="userbtn">添加</button>
 						</div>
 					
 				</div>
@@ -53,7 +53,8 @@ s							<button class="userbtn">添加</button>
 							<td><a href="connoisseuradd.html"><img class="operation"
 									src="img/update.png"></a> <img class="operation delban"
 								src="img/delete.png"></td>
-            
+
+                           
 							
 						</tr>
 

@@ -37,8 +37,8 @@
 							<td width="435px" class="tdColor">管理员名称</td>
 						   
 							<td width="130px" class="tdColor">操作</td>
-      						<td width="150" class="tdColor">管理人员分配角色</td>
-      						<td width="150" class="tdColor">赋予权限</td>
+      						<td width="150" class="tdColor">绑定角色</td>
+      						
 						</tr>
 						<?php foreach ($result as $k => $v) {  ?>
 							
@@ -51,7 +51,7 @@
 								src="img/delete.png"></td>
 
 							<td><a href="?r=admin/premission&admin_id=<?=$v['id']?>">添加角色</a></td>
-							<td><a href="?r=admin/node&admin_id=<?=$v['id']?>">添加权限</a></td>
+							
 						</tr>
 
 						<?php  } ?>
