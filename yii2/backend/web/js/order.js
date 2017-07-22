@@ -74,7 +74,6 @@ $(document).on('click','.details',function(){
 			if(obj.status == 1){
 				$('.order_goods_show').show();
 				var str = '<tr><td>'+obj.arr.order_goods_id+'</td><td>'+obj.arr.goods_name+'</td><td>'+obj.arr.goods_sn+'</td><td>'+obj.arr.buy_number+'</td><td>'+obj.arr.goods_price+'</td><td>'+obj.arr.goods_attr+'</td><td><a href="#">导出</a></td></tr>';
-				alert(str);
 				$('.order_goods').html(str);
 			}else{
 				alert(obj.msg);

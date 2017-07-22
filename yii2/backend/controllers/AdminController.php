@@ -73,26 +73,51 @@ class AdminController extends CommonController
 
 
     //--------给用户赋予角色
+     /*
+          *1,根据传过来的管理员Id查询出拥有的角色 
+          *2,如果管理员已经拥有角色 得到已经有的角色名字
+          *3，如果管理员没有角色  选择角色名称
+          *2，同时将角色表传递过去写成下拉框方便选择
+     */
     public function actionPremission(){
-           
-        $request = yii::$app->request;
-        $db = Yii::$app->db;
-        $admin_id = Yii::$app->request->get('admin_id');
 
+         
+           $request = YII::$app->request;
+           $db = Yii::$app->db;
+           $admin_id = Yii::$app->request->get('admin_id');
+           $sql="select * from admin inner join premission on admin.id=premission.admin_id where id='$admin_id'";
+           $res=yii::$app->db->createCommand($sql)->queryAll();
+           if ($res) {
             //查询用户拥有角色
-            
-            $sql1="select * from role"; 
+            $arr="";
+            foreach ($res as $k => $v) {
+                 $arr.=$v['role_id'].',';
+            }
+            $role_id=rtrim($arr,',');
+            $sql1="select * from role where id in ($role_id)"; 
             
             $role=yii::$app->db->createCommand($sql1)->queryAll();
-            if ($role) {
-            	
-            
-            	return $this->renderPartial('premission.php',['admin_id'=>$admin_id,'role'=>$role]);
+            $data="";
+            foreach ($role as $key => $value) {
+                $data.=$value['role_name'].',';
             }
+            $role_name=rtrim($data,',');
+            $role_list=yii::$app->db->createCommand("select * from role")->queryAll();
+            return $this->renderPartial('premission.php',['admin_id'=>$admin_id,'role_name'=>$role_name,'role_list'=>$role_list]);
             
+           }else{
+            $role_list=yii::$app->db->createCommand("select * from role")->queryAll();
+            $role_name="暂时未绑定角色";
+            return $this->renderPartial('premission.php',['admin_id'=>$admin_id,'role_name'=>$role_name,'role_list'=>$role_list]);
+            
+           }
+            
+       
     
     }
 
+
+    //----------绑定角色添加
     public function  actionPremission_add()
     {
     	
@@ -103,7 +128,7 @@ class AdminController extends CommonController
 
         $res=Yii::$app->db->createCommand()->insert('premission',['role_id' =>$id,'admin_id'=>$admin_id])->execute();
         if ($res) {
-             echo "<script>alert('添加成功');location.href='index.php?r=admin/node_list'</script>";
+             echo "<script>alert('添加成功');location.href='index.php?r=admin/privillage&role_id=$id'</script>";
         }
         
     }
@@ -151,6 +176,52 @@ class AdminController extends CommonController
 
 
 
+
+
+    //-------角色赋权
+    public   function actionPrivillage()
+    {
+         $request = yii::$app->request;
+         $db = Yii::$app->db;
+         $role_id = Yii::$app->request->get('role_id');
+         $sql="select * from node";
+         $node_list=yii::$app->db->createCommand($sql)->queryAll();
+            
+    return $this->renderPartial('privillage.php',['node_list'=>$node_list,'role_id'=>$role_id]);
+          
+            
+    }
+
+    //角色赋权添加
+    public function actionPrivillage_add()
+    {
+        
+         $request = yii::$app->request;
+         $db = Yii::$app->db;
+         
+         $data =Yii::$app->request->post();
+
+         $controller=implode(',',$data['controller']);
+         $action=implode(',',$data['action']);
+         $role_id=$data['role_id'];
+         $sql="select  * from node where id in($controller) or id in($action)";
+         $node=yii::$app->db->createCommand($sql)->queryAll();
+         $arr="";
+         foreach ($node as $key => $value) {
+            
+              $arr.="(".$value['id'].",".$role_id."),";
+              
+             
+        }
+            $arr=rtrim($arr,',');
+            $sql1="insert into privillage(node_id,role_id) values $arr";
+            $res=yii::$app->db->createCommand($sql1)->execute();
+              if ($res) {
+                  echo "<script>alert('添加成功');location.href='index.php?r=admin/role'</script>";
+              }
+         
+         
+    }
     
 
 

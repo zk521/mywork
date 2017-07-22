@@ -41,7 +41,7 @@ class IndexController extends CommonController
 	//退出删除session
 	public function actionLogout()
 	{
-		$bloon = yii::$app->session->remove('username');
+		$bloon = yii::$app->session->remove('root');
 		if($bloon) {
 			return $this->redirect('?r=login/index');
 		}
