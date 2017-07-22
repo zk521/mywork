@@ -25488,6 +25488,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500552144.5094
     'REQUEST_TIME' => 1500552144
 ]
+<<<<<<< HEAD
 2017-07-20 20:40:22 [127.0.0.1][-][hvmam5fv0dkb5v1vhhqijt23m0][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: bussiness/' in C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php:127
 Stack trace:
 #0 C:\Users\hh\Documents\GitHub\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
@@ -30054,16 +30055,60 @@ Stack trace:
 #5 C:\Users\hh\Documents\GitHub\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
 #6 {main}
 2017-07-21 14:28:55 [127.0.0.1][-][2507fl1kon9abqn2mcrk764oo6][info][application] $_GET = [
+=======
+2017-07-21 15:29:02 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\CommonController.php(38): yii\db\Command->queryOne()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+The SQL being executed was: select role_id from premission where admin_id= ' in D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select role_id ...')
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 D:\phpStudy\WWW\gitshop\yii2\backend\controllers\CommonController.php(38): yii\db\Command->queryOne()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(154): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#6 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+)
+
+2017-07-21 15:29:02 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][info][application] $_GET = [
+>>>>>>> px
     'r' => 'index/head'
 ]
 
 $_COOKIE = [
+<<<<<<< HEAD
     'advanced-backend' => '2507fl1kon9abqn2mcrk764oo6'
     '_csrf-backend' => '4606ec04462d35968ca7fd4ea2112232fb7fa54a10b45e26afc3a016f7b27700a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\",F���2\'�40tF��CaXa��U��O�h�3�\";}'
+=======
+    'advanced-frontend' => 'glumksdn5tgg4trnrvepmluvs7'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => 'pmvtubim0dojvqmjrcv0glcu24'
+>>>>>>> px
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     'username' => '周可'
     'root' => '1'
 ]
@@ -30316,10 +30361,73 @@ Stack trace:
 
 $_COOKIE = [
     'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+=======
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/index.php?r=index/index'
+    'HTTP_COOKIE' => 'advanced-frontend=glumksdn5tgg4trnrvepmluvs7; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=pmvtubim0dojvqmjrcv0glcu24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\安装\\git\\git安装\\Git\\cmd;D:\\;装\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '58651'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/index.php?r=index/head'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500622142.488
+    'REQUEST_TIME' => 1500622142
+]
+2017-07-21 15:29:12 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: bussiness_id' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\OrderController.php:153
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\OrderController->actionIndex()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-21 15:29:12 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][info][application] $_GET = [
+    'r' => 'order/index'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'glumksdn5tgg4trnrvepmluvs7'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => 'pmvtubim0dojvqmjrcv0glcu24'
+>>>>>>> px
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     'root' => '1'
     'username' => '周可'
 ]
@@ -30377,10 +30485,73 @@ Stack trace:
 
 $_COOKIE = [
     'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+=======
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/inc/left.html'
+    'HTTP_COOKIE' => 'advanced-frontend=glumksdn5tgg4trnrvepmluvs7; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=pmvtubim0dojvqmjrcv0glcu24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\安装\\git\\git安装\\Git\\cmd;D:\\;装\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '58693'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=order/index'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/?r=order/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500622152.711
+    'REQUEST_TIME' => 1500622152
+]
+2017-07-21 15:32:18 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: bussiness_id' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\OrderController.php:153
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\OrderController->actionIndex()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-21 15:32:17 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][info][application] $_GET = [
+    'r' => 'order/index'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'glumksdn5tgg4trnrvepmluvs7'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => 'pmvtubim0dojvqmjrcv0glcu24'
+>>>>>>> px
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     'root' => '1'
     'username' => '周可'
 ]
@@ -30438,10 +30609,73 @@ Stack trace:
 
 $_COOKIE = [
     'advanced-backend' => 'nlsknqj1e1dcsofajsd9lvcv80'
+=======
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/inc/left.html'
+    'HTTP_COOKIE' => 'advanced-frontend=glumksdn5tgg4trnrvepmluvs7; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=pmvtubim0dojvqmjrcv0glcu24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\安装\\git\\git安装\\Git\\cmd;D:\\;装\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '58894'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=order/index'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/?r=order/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500622337.891
+    'REQUEST_TIME' => 1500622337
+]
+2017-07-21 15:33:41 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: bussiness_id' in D:\phpStudy\WWW\gitshop\yii2\backend\controllers\OrderController.php:153
+Stack trace:
+#0 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\OrderController->actionIndex()
+#1 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#2 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#4 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 D:\phpStudy\WWW\gitshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest()
+#6 D:\phpStudy\WWW\gitshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2017-07-21 15:33:41 [127.0.0.1][-][pmvtubim0dojvqmjrcv0glcu24][info][application] $_GET = [
+    'r' => 'order/index'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'glumksdn5tgg4trnrvepmluvs7'
+    'mindsparktb_206720000' => 'true'
+    'mindsparktbsupport_206720000' => 'true'
+    'mindspark_extension_api_features_206720000' => 'TOOLBAR_CLEANER'
+    'advanced-backend' => 'pmvtubim0dojvqmjrcv0glcu24'
+>>>>>>> px
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     'root' => '1'
     'username' => '周可'
 ]
@@ -30488,4 +30722,45 @@ $_SERVER = [
     'PHP_SELF' => '/yii2/backend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1500622310.7512
     'REQUEST_TIME' => 1500622310
+=======
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/gitshop/yii2/backend/web/inc/left.html'
+    'HTTP_COOKIE' => 'advanced-frontend=glumksdn5tgg4trnrvepmluvs7; mindsparktb_206720000=true; mindsparktbsupport_206720000=true; mindspark_extension_api_features_206720000=TOOLBAR_CLEANER; advanced-backend=pmvtubim0dojvqmjrcv0glcu24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\安装\\git\\git安装\\Git\\cmd;D:\\;装\\svn\\bin;;:\\phpStudy\\php55;C:\\ProgramData\\ComposerSetup\\bin;D:\\phpStudy\\php55;D:\\phpStudy\\MySQL\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/5.5.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/phpStudy/WWW'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'SCRIPT_FILENAME' => 'D:/phpStudy/WWW/gitshop/yii2/backend/web/index.php'
+    'REMOTE_PORT' => '59007'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=order/index'
+    'REQUEST_URI' => '/gitshop/yii2/backend/web/?r=order/index'
+    'SCRIPT_NAME' => '/gitshop/yii2/backend/web/index.php'
+    'PHP_SELF' => '/gitshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500622421.438
+    'REQUEST_TIME' => 1500622421
+>>>>>>> px
 ]
