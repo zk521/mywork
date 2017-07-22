@@ -25488,3 +25488,292 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500552144.5094
     'REQUEST_TIME' => 1500552144
 ]
+2017-07-21 10:46:21 [::1][-][tpsflvk5aj4gl91iqvp6nsbtr6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.qq_region' doesn't exist' in F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\controllers\BussinessController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\BussinessController->actionBussiness()
+#4 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.qq_region' doesn't exist
+The SQL being executed was: select * from bussiness inner join qq_region on bussiness.b_address=qq_region.region_id' in F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from b...')
+#1 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\controllers\BussinessController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\BussinessController->actionBussiness()
+#4 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.qq_region' doesn't exist
+)
+
+2017-07-21 10:46:21 [::1][-][tpsflvk5aj4gl91iqvp6nsbtr6][info][application] $_GET = [
+    'r' => 'bussiness/bussiness'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499605131,1499648067,1499740255,1500554276'
+    'advanced-backend' => 'tpsflvk5aj4gl91iqvp6nsbtr6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '2'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\学习\\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2036'
+    'SCRIPT_NAME' => '/big1/myshop/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/myshop/yii2/backend/web/index.php?r=bussiness/bussiness'
+    'QUERY_STRING' => 'r=bussiness/bussiness'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '57881'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/myshop/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499605131,1499648067,1499740255,1500554276; advanced-backend=tpsflvk5aj4gl91iqvp6nsbtr6'
+    'HTTP_REFERER' => 'http://localhost/big1/myshop/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/myshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500605181.5786
+    'REQUEST_TIME' => 1500605181
+]
+2017-07-21 10:57:07 [::1][-][tpsflvk5aj4gl91iqvp6nsbtr6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.qq_region' doesn't exist' in F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\controllers\BussinessController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\BussinessController->actionBussiness()
+#4 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.qq_region' doesn't exist
+The SQL being executed was: select * from bussiness inner join qq_region on bussiness.b_address=qq_region.region_id' in F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from b...')
+#1 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\controllers\BussinessController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\BussinessController->actionBussiness()
+#4 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.qq_region' doesn't exist
+)
+
+2017-07-21 10:57:07 [::1][-][tpsflvk5aj4gl91iqvp6nsbtr6][info][application] $_GET = [
+    'r' => 'bussiness/bussiness'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499605131,1499648067,1499740255,1500554276'
+    'advanced-backend' => 'tpsflvk5aj4gl91iqvp6nsbtr6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '2'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\学习\\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2044'
+    'SCRIPT_NAME' => '/big1/myshop/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/myshop/yii2/backend/web/index.php?r=bussiness/bussiness'
+    'QUERY_STRING' => 'r=bussiness/bussiness'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58771'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/myshop/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499605131,1499648067,1499740255,1500554276; advanced-backend=tpsflvk5aj4gl91iqvp6nsbtr6'
+    'HTTP_REFERER' => 'http://localhost/big1/myshop/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/myshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500605827.4766
+    'REQUEST_TIME' => 1500605827
+]
+2017-07-21 11:51:44 [::1][-][tpsflvk5aj4gl91iqvp6nsbtr6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.qq_region' doesn't exist' in F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\controllers\BussinessController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\BussinessController->actionBussiness()
+#4 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.qq_region' doesn't exist
+The SQL being executed was: select * from bussiness inner join qq_region on bussiness.b_address=qq_region.region_id' in F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from b...')
+#1 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\controllers\BussinessController.php(26): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\BussinessController->actionBussiness()
+#4 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\web\phpStudy\WWW\big1\myshop\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\web\phpStudy\WWW\big1\myshop\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.qq_region' doesn't exist
+)
+
+2017-07-21 11:51:44 [::1][-][tpsflvk5aj4gl91iqvp6nsbtr6][info][application] $_GET = [
+    'r' => 'bussiness/bussiness'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.355970500.1496455169'
+    'pgv_pvi' => '1001204736'
+    'Hm_lvt_2d04fd046a068f762bdc16c295cf98e7' => '1499605131,1499648067,1499740255,1500554276'
+    'advanced-backend' => 'tpsflvk5aj4gl91iqvp6nsbtr6'
+    'advanced-frontend' => 'rtrqi2dc59fdmgr4t9aduhtm04'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'root' => '2'
+    'username' => '周可'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;F:\\学习\\svn\\bin;;;:\\web\\phpStudy\\git\\Git\\cmd;F:\\web\\phpStudy\\Git\\cmd;F:\\web\\phpStudy\\php\\php-5.6.27-nts;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenov\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/web/phpStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2356'
+    'SCRIPT_NAME' => '/big1/myshop/yii2/backend/web/index.php'
+    'REQUEST_URI' => '/big1/myshop/yii2/backend/web/index.php?r=bussiness/bussiness'
+    'QUERY_STRING' => 'r=bussiness/bussiness'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62214'
+    'SCRIPT_FILENAME' => 'F:/web/phpStudy/WWW/big1/myshop/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/web/phpStudy/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_ga=GA1.1.355970500.1496455169; pgv_pvi=1001204736; Hm_lvt_2d04fd046a068f762bdc16c295cf98e7=1499605131,1499648067,1499740255,1500554276; advanced-backend=tpsflvk5aj4gl91iqvp6nsbtr6; advanced-frontend=rtrqi2dc59fdmgr4t9aduhtm04'
+    'HTTP_REFERER' => 'http://localhost/big1/myshop/yii2/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/big1/myshop/yii2/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500609104.1608
+    'REQUEST_TIME' => 1500609104
+]
