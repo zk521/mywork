@@ -20,7 +20,7 @@ class LoginController extends Controller
 	
 
     //登录
-	public function actionLog()
+	public function actionIndex()
 	{
 		return $this->renderPartial('log.php');
 	}
