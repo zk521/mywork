@@ -19,19 +19,9 @@ class CommonController extends Controller
         $root_id  = Yii::$app->session->get('root');
         $username=yii::$app->session->get('username');
         //判断是否有登录session
-<<<<<<< HEAD
         if(!isset($root_id)){
             echo "<script>alert('请先登录');location.href='index.php?r=login/index'</script>";die;
         }   
-=======
-        if(!isset($username)){
-            // echo "<script>alert('请先登录');location.href='index.php?r=login/index'</script>";die;
-        }
-        //设置超级管理员
-        if($username=="周可"){
-            return true;
-        }
->>>>>>> px
         //判断权限
         $ctl=Yii::$app->controller->id;     //获取当前访问的控制器
 
