@@ -14,7 +14,7 @@ use db;
 use yii;
 
  
-class PayController extends Controller
+class PayController extends CommonController
 {
 	public $enableCsrfValidation = false;
 

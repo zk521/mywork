@@ -30,20 +30,20 @@ class LoginController extends Controller
 	public  function actionCheck_login()
 	{
 		
-		$username = yii::$app->request->post('username');
-		$pwd = yii::$app->request->post('pwd');
+		$username = yii::$app->request->post('bussiness_name');
+		$pwd = yii::$app->request->post('bussiness_pwd');
 		$index = yii::$app->request->post('index');
 		//通过用户选择的登录方式查库
 		$db = yii::$app->db;
-		$result = $db->createCommand("select * from admin where $index='$username'")->queryOne();
+		$result = $db->createCommand("select * from bussiness_admin where $index='$username'")->queryOne();
 		
 		if($result["$index"] == $username)
 		{
-			if($result['pwd'] == $pwd)
+			if($result['bussiness_pwd'] == $pwd)
 			{
 				//存用户ID
-				Yii::$app->session['root']=$result['id'];
-				yii::$app->session['username']=$result['username'];
+				Yii::$app->session['bad_id']=$result['bad_id'];
+				
 				return 1;
 			}
 			else

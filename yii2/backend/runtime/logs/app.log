@@ -38414,3 +38414,1008 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500625151.2377
     'REQUEST_TIME' => 1500625151
 ]
+2017-07-24 09:40:56 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16271 bytes' 
+
+in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\lenovo...', 88, Array)
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\lenovo...', Array)
+#3 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-07-24 09:40:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59387'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860456.6377
+    'REQUEST_TIME' => 1500860456
+]
+2017-07-24 09:41:05 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16271 bytes' 
+
+in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\lenovo...', 88, Array)
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\lenovo...', Array)
+#3 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-07-24 09:41:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'login/check_login'
+]
+
+$_POST = [
+    'username' => 'å‘¨å¯'
+    'pwd' => '1234567'
+    'index' => 'username'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/?r=login/check_login'
+    'QUERY_STRING' => 'r=login/check_login'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59393'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'CONTENT_LENGTH' => '54'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860464.1914
+    'REQUEST_TIME' => 1500860464
+]
+2017-07-24 09:41:05 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16271 bytes' 
+
+in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\lenovo...', 88, Array)
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\lenovo...', Array)
+#3 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-07-24 09:41:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59393'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860465.3954
+    'REQUEST_TIME' => 1500860465
+]
+2017-07-24 09:41:05 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16271 bytes' 
+
+in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\lenovo...', 88, Array)
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\lenovo...', Array)
+#3 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-07-24 09:41:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'index/head'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/?r=index/head'
+    'QUERY_STRING' => 'r=index/head'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59393'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860465.5968
+    'REQUEST_TIME' => 1500860465
+]
+2017-07-24 09:41:19 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 16271 bytes' 
+
+in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\Users\\lenovo...', 88, Array)
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\Users\\lenovo...', Array)
+#3 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-07-24 09:41:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'count/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/?r=count/index'
+    'QUERY_STRING' => 'r=count/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59409'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860478.034
+    'REQUEST_TIME' => 1500860478
+]
+2017-07-24 09:41:20 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\models\Pending.php(28): yii\db\Command->queryAll()
+#3 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#4 [internal function]: backend\controllers\PendingController->actionIndex()
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+The SQL being executed was: select goods_sn from goods where id in ()' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select goods_sn...')
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\models\Pending.php(28): yii\db\Command->queryAll()
+#3 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\PendingController.php(19): backend\models\Pending->getComment()
+#4 [internal function]: backend\controllers\PendingController->actionIndex()
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#9 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+)
+
+2017-07-24 09:41:19 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][info][application] $_GET = [
+    'r' => 'pending/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/?r=pending/index'
+    'QUERY_STRING' => 'r=pending/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59411'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860479.5408
+    'REQUEST_TIME' => 1500860479
+]
+2017-07-24 09:41:25 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-24 09:41:24 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][info][application] $_GET = [
+    'r' => 'vip/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/index.php?r=vip/add'
+    'QUERY_STRING' => 'r=vip/add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59413'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860484.4999
+    'REQUEST_TIME' => 1500860484
+]
+2017-07-24 09:41:30 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(89): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(89): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-24 09:41:29 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][info][application] $_GET = [
+    'r' => 'vip/ranklist'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/index.php?r=vip/ranklist'
+    'QUERY_STRING' => 'r=vip/ranklist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59424'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860489.4954
+    'REQUEST_TIME' => 1500860489
+]
+2017-07-24 09:41:32 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-24 09:41:31 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][info][application] $_GET = [
+    'r' => 'vip/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/index.php?r=vip/add'
+    'QUERY_STRING' => 'r=vip/add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59421'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860491.5934
+    'REQUEST_TIME' => 1500860491
+]
+2017-07-24 09:42:35 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(23): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionAdd()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-24 09:42:34 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][info][application] $_GET = [
+    'r' => 'vip/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/index.php?r=vip/add'
+    'QUERY_STRING' => 'r=vip/add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59446'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860554.4402
+    'REQUEST_TIME' => 1500860554
+]
+2017-07-24 09:42:37 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php:1032
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1032): PDOStatement->execute()
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(89): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myshop.viprank' doesn't exist
+The SQL being executed was: select * from viprank' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(1047): yii\db\Schema->convertException(Object(PDOException), 'select * from v...')
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 C:\Users\lenovo\Documents\mywork\yii2\backend\controllers\VipController.php(89): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\VipController->actionRanklist()
+#4 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#5 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'myshop.viprank' doesn't exist
+)
+
+2017-07-24 09:42:36 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][info][application] $_GET = [
+    'r' => 'vip/ranklist'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/index.php?r=vip/ranklist'
+    'QUERY_STRING' => 'r=vip/ranklist'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59449'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.shop.com/backend/web/inc/left.html'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860556.0552
+    'REQUEST_TIME' => 1500860556
+]
+2017-07-24 09:42:47 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: login/log' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('log', Array)
+#1 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('login/log', Array)
+#2 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\Users\lenovo\Documents\mywork\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\lenovo\Documents\mywork\yii2\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-07-24 09:42:46 [127.0.0.1][-][neprlod4utmvv19bsvulh6hj82][info][application] $_GET = [
+    'r' => 'login/log'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'neprlod4utmvv19bsvulh6hj82'
+    '_csrf-backend' => '0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"[oBTÇX÷µŒ¡sí]$—sý·èðç\0a+ëS\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    'root' => '1'
+    'username' => 'å‘¨å¯'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\web\\mysql\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\svn\\bin;D:\\PHPStudy\\php\\php-5.6.27-nts;D:\\GIT\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\lenovo\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lenovo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/PHPStudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2068'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'REQUEST_URI' => '/backend/web/?r=login/log'
+    'QUERY_STRING' => 'r=login/log'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '59453'
+    'SCRIPT_FILENAME' => 'C:/Users/lenovo/Documents/mywork/yii2/backend/web/index.php'
+    'SERVER_ADMIN' => 'webmaster@dummy-host.example.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/Users/lenovo/Documents/mywork/yii2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=neprlod4utmvv19bsvulh6hj82; _csrf-backend=0475dd95bab9c32ff1ed724f1ee62ceccae81a9172d03a4b3b3dd192a9b7daa5a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%5BoB%10%7FT%C7%15X%F7%B5%8C%A1s%1F%0D%ED%5D%24%97s%FD%B7%E8%F0%E7%00a%0F%2B%EBS%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'www.shop.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500860566.8791
+    'REQUEST_TIME' => 1500860566
+]

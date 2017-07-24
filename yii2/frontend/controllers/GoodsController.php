@@ -16,7 +16,7 @@ use yii;
 /**
  * Site controller
  */
-class GoodsController extends Controller
+class GoodsController extends CommonController
 {
     public $enableCsrfValidation = false;
 
