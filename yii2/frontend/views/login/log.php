@@ -12,7 +12,7 @@ body {
 
 </head>
 <body style="background: #278296">
-<form method="post" action="privilege.php" name='theForm'>
+<form method="post" action="?r=login/check_login" name='theForm'>
   <table cellspacing="0" cellpadding="0" style="margin-top: 100px" align="center">
   <tr>
     <td><img src="images/login.png" width="178" height="256" border="0" alt="ECSHOP" /></td>
@@ -24,7 +24,7 @@ body {
       </tr>
       <tr>
         <td>管理员密码：</td>
-        <td><input type="password" name="password" /></td>
+        <td><input type="password" name="pwd" /></td>
       </tr>
       <tr>
         <td>验证码：</td>

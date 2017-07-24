@@ -108,7 +108,7 @@ $(".no").click(function(){
 			success:function(obj){
               if (obj.msg==1) {
 					var str='';
-					str+='<tr height="40px" opt="'+obj.last_id+'"><td>'+obj.last_id+'</td><td>'+username+'</td><td><a href="connoisseuradd.html"><img class="operation" src="img/update.png"></a> <img class="operation delban"src="img/delete.png"></td></tr>';
+					str+='<tr height="40px" opt="'+obj.last_id+'"><td>'+obj.last_id+'</td><td>'+username+'</td><td><a href="connoisseuradd.html"><img class="operation" src="img/update.png"></a> <img class="operation delban"src="img/delete.png"></td><td><a href="?r=admin/premission&admin_id='+obj.last_id+'">添加角色</a></td></tr>';
 
 					$('.tab').append(str);
 
