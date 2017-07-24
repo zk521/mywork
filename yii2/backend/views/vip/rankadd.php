@@ -22,7 +22,7 @@
 				</div>
 				<div class="baBody">
 					<div class="bbD">
-						会员名称：<input type="text" class="input3" id="rand_name" />
+						级别名称：<input type="text" class="input3" id="rand_name" />
 					</div>
 					<span id="result"></span>
 					<div class="bbD">
