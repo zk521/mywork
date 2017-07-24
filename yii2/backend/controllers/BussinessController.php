@@ -20,7 +20,7 @@ class BussinessController extends CommonController
 	//商家管理----
 	public function actionBussiness()
 	{
-        $sql="select * from bussiness inner join qq_region on bussiness.b_address=qq_region.region_id";
+        $sql="select * from bussiness inner join region on bussiness.b_address=region.id";
         
         $db=yii::$app->db;
         $data=$db->createCommand($sql)->queryAll();

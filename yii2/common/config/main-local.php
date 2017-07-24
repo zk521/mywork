@@ -4,9 +4,9 @@ if($_SERVER['HTTP_HOST'] == 'www.myshop.com') {
         'components' => [
             'db' => [
                 'class' => 'yii\db\Connection',
-                'dsn' => 'mysql:host=127.0.0.1;dbname=myshop',
+                'dsn' => 'mysql:host=localhost;dbname=myshop',
                 'username' => 'root',
-                'password' => 'root',
+                'password' => 'liu1205',
                 'charset' => 'utf8',
             ],
             'mailer' => [
@@ -35,7 +35,7 @@ if($_SERVER['HTTP_HOST'] == 'www.myshop.com') {
                 'class' => 'yii\db\Connection',
                 'dsn' => 'mysql:host=127.0.0.1;dbname=myshop',
                 'username' => 'root',
-                'password' => 'root',
+                'password' => 'liu1205',
                 'charset' => 'utf8',
             ],
             'mailer' => [

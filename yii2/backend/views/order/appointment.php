@@ -93,34 +93,34 @@ use yii\widgets\LinkPager;
 							<td><?=$value['add_time']?></td>
 							<?php if ($value['order_status'] ==1): ?>
 								<td><span class="status" stype="order_status" status="<?=$value['order_status']?>">未确认</span></td>
-							<?php elseif($value['order_status'] ==2):?>	
+							<?php elseif($value['order_status'] ==2):?>
 								<td><span class="status" stype="order_status" status="<?=$value['order_status']?>">确认</span></td>
-							<?php elseif($value['order_status'] ==3):?>	
+							<?php elseif($value['order_status'] ==3):?>
 								<td><span class="status" stype="order_status" status="<?=$value['order_status']?>">已取消</span></td>
-							<?php elseif($value['order_status'] ==4):?>	
+							<?php elseif($value['order_status'] ==4):?>
 								<td><span class="status" stype="order_status" status="<?=$value['order_status']?>">无效</span></td>
-							<?php elseif($value['order_status'] ==5):?>	
+							<?php elseif($value['order_status'] ==5):?>
 								<td><span class="status" stype="order_status" status="<?=$value['order_status']?>">退货</span></td>
 							<?php endif ?>
 							<?php if ($value['pay_status'] == 1): ?>
 								<td><span class="status" stype="pay_status" status="<?=$value['pay_status']?>">未付款</span></td>
-							<?php elseif($value['pay_status'] == 2):?>	
+							<?php elseif($value['pay_status'] == 2):?>
 								<td><span class="status" stype="pay_status" status="<?=$value['pay_status']?>">已付款</span></td>
 							<?php endif ?>
 							<td><?=$value['pay_time']?></td>
 							<?php if ($value['shipping_status'] == 1): ?>
 								<td><span class="status" stype="shipping_status" status="<?=$value['shipping_status']?>">未发货</span></td>
-							<?php elseif($value['order_status'] ==2):?>	
+							<?php elseif($value['shipping_status'] ==2):?>
 								<td><span class="status" stype="shipping_status" status="<?=$value['shipping_status']?>">已发货</span></td>
-							<?php elseif($value['order_status'] ==3):?>	
+							<?php elseif($value['shipping_status'] ==3):?>
 								<td><span class="status" stype="shipping_status" status="<?=$value['shipping_status']?>">配货中</span></td>
-							<?php elseif($value['order_status'] ==4):?>	
+							<?php elseif($value['shipping_status'] ==4):?>
 								<td><span class="status" stype="shipping_status" status="<?=$value['shipping_status']?>">已签收</span></td>
-							<?php elseif($value['order_status'] ==5):?>	
+							<?php elseif($value['shipping_status'] ==5):?>
 								<td><span class="status" stype="shipping_status" status="<?=$value['shipping_status']?>">退货</span></td>
 							<?php endif ?>
 							<td><?=$value['message']?></td>
-							<td><?=$value['username ']?></td>
+							<td><?=$value['username']?></td>
 							<td><?=$value['tel']?></td>
 							<td><?=$value['path']?></td>
 							<td><a href="connoisseuradd.html"><img class="operation"

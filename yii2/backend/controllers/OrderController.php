@@ -31,6 +31,7 @@ class OrderController extends CommonController
   		
   		//订单详情
   		$arr = $this->orderInfo();
+//  		print_r($arr['orderInfo']);die;
 		return $this->renderPartial('appointment.php', ['buss'=>$buss, 'orderInfo'=>$arr['orderInfo'], 'pagination' => $arr['pagination'] ]);
 	}
 
@@ -39,7 +40,8 @@ class OrderController extends CommonController
 	 */
 	public function actionSearch(){
 		$data = yii::$app->request->post();
-		$where = '1=1 '; 
+		$where = '1=1 ';
+
 		if(!empty($data['start_time'])){
 			$where .= ' and `add_time` >=' . strtotime($data['start_time']);
 			unset($data['start_time']);
@@ -144,6 +146,7 @@ class OrderController extends CommonController
     	//调取分页
     	$arr = $this->limit($where, $table);
     	$orderInfo = $arr['data'];
+//    	print_r($orderInfo);die;
 		foreach ($orderInfo as $key => $value) {
 			//收件人电话
 			$sql = "select tel from user where id = ". $value['user_id'];

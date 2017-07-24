@@ -33,6 +33,8 @@ class LoginController extends Controller
 		$username = yii::$app->request->post('bussiness_name');
 		$pwd = yii::$app->request->post('bussiness_pwd');
 		$index = yii::$app->request->post('index');
+		echo $pwd;
+		echo $index;die;
 		//通过用户选择的登录方式查库
 		$db = yii::$app->db;
 		$result = $db->createCommand("select * from bussiness_admin where $index='$username'")->queryOne();

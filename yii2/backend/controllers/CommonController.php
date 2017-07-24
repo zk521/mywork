@@ -18,6 +18,7 @@ class CommonController extends Controller
 		$db = yii::$app->db;
         $root_id  = Yii::$app->session->get('root');
         $username=yii::$app->session->get('username');
+
         //判断是否有登录session
         if(!isset($root_id)){
             echo "<script>alert('请先登录');location.href='index.php?r=login/index'</script>";die;
