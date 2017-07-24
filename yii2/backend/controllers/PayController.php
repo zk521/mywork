@@ -14,9 +14,15 @@ class PayController extends controller
 	// 接值入库
 	public function actionPaydata(){
 		$data = yii::$app->request->get();
+		$p_name = $data['p_name'];
 		$is_on = $data['is_on'];
-		$sql = "insert into pay_three values(null,'$data[partner_id]','$data[account_numb]','$data[keys]','$data[p_name]','$data[p_desc]','$data[is_on]')";
-		$db = yii::$app->db;
+		if ($p_name == '支付宝') {
+			$sql = "insert into pay_three values(null,'$data[partner_id]','$data[account_numb]','null','$data[keys]','$p_name','$data[p_desc]','$data[is_on]')";
+			$db = yii::$app->db;
+		}else{
+			$sql = "insert into pay_three values(null,'$data[partner_id]','$data[account_numb]','$data[mch_id]','$data[keys]','$p_name','$data[p_desc]','$data[is_on]')";
+			$db = yii::$app->db;
+		}
 		$paydata = $db->createCommand($sql)->execute();
 		if ($paydata) {
 			echo 1;

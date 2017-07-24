@@ -31,13 +31,16 @@
 						支付方式描述：<input type="text" class="input3" id="p_desc" value="描述" />
 					</div>
 					<div class="bbD">
-						支付宝账户：<input type="text"  class="input3" id="account_numb" />
+						支付宝账户邮箱(微信appid)：<input type="text"  class="input3" id="account_numb" />
 					</div>
 					<div class="bbD">
-						安全校验码：<input type="text" class="input3" id="keys" />
+						安全校验码(微信key)：<input type="text" class="input3" id="keys" />
 					</div>
 					<div class="bbD">
-						合作者身份：<input type="text" class="input3" id="partner_id" />
+						合作者身份(微信appsecret)：<input type="text" class="input3" id="partner_id" />
+					</div>
+					<div class="bbD">
+						微信支付手段(mchid)：<input type="text" class="input3" id="mch_id" value="微信支付手段" />
 					</div>
 					<div class="bbD">
 						支付宝是否开启：<input type="radio" name="is_on" id="is_on" value="1">是
@@ -67,9 +70,10 @@
 		var partner_id = $("#partner_id").val();
 		var keys = $("#keys").val();
 		var is_on = $("#is_on").val();
+		var mch_id = $("#mch_id").val();
 		$.ajax({
 			url:"?r=pay/paydata",
-			data:{p_name:p_name,p_desc:p_desc,account_numb:account_numb,partner_id:partner_id,keys:keys,is_on:is_on},
+			data:{p_name:p_name,p_desc:p_desc,account_numb:account_numb,partner_id:partner_id,keys:keys,is_on:is_on,mch_id:mch_id},
 			success:function(msg){
 				if (msg==1) {
 					$("#pay").html("添加成功");
