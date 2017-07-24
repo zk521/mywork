@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>
-    <span class="action-span"><a href="goods.php?act=list">商品列表</a></span>
+    <span class="action-span"><a href="index.php?r=pay/pay">录入支付</a></span>
     <span class="action-span1"><a href="index.php?r">商品管理中心 </a> </span><span id="search_id" class="action-span1"> - 录入支付 </span>
     <div style="clear:both"></div>
 </h1>
@@ -41,8 +41,8 @@
                     <td><?php echo $value['pay_name']?></td>
                     <td><?php echo $value['pay_price']?></td>
                     <td>
-                    <a href="index.php?r=pay/pay_del&id=<?php echo $value['id']?>&pay_id=<?php echo $value['pay_id']?>">删除</a> |
-                    <a href="index.php?r=pay/pay_up&id=<?php echo $value['id']?>&pay_id=<?php echo $value['pay_id']?>">修改</a>
+                    <a href="index.php?r=pay/pay_del&user_id = <?php echo $value['user_id']?>&id=<?php echo $value['id']?>&pay_id=<?php echo $value['pay_id']?>">删除</a> |
+                    <a href="index.php?r=pay/pay_up&user_id = <?php echo $value['user_id']?>&id=<?php echo $value['id']?>&pay_id=<?php echo $value['pay_id']?>">修改</a>
                     </td>
                 </tr>
                  <?php }?>

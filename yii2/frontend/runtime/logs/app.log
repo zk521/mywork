@@ -3889,3 +3889,262 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1500628339.9041
     'REQUEST_TIME' => 1500628339
 ]
+2017-07-24 08:31:54 [127.0.0.1][-][27fb667imcas63p882ptknkr63][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_id =' at line 1' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(50): yii\db\Command->execute()
+#2 [internal function]: frontend\controllers\PayController->actionPay_del()
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_id =' at line 1
+The SQL being executed was: DELETE FROM `pay_price` WHERE pay_id = 1 and id =3and user_id =' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `pa...')
+#1 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(50): yii\db\Command->execute()
+#2 [internal function]: frontend\controllers\PayController->actionPay_del()
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user_id =' at line 1
+)
+
+2017-07-24 08:31:54 [127.0.0.1][-][27fb667imcas63p882ptknkr63][info][application] $_GET = [
+    'r' => 'pay/pay_del'
+    'user_id_' => ' 1'
+    'id' => '3'
+    'pay_id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '27fb667imcas63p882ptknkr63'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1772'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_del&user_id%20=%201&id=3&pay_id=1'
+    'QUERY_STRING' => 'r=pay/pay_del&user_id%20=%201&id=3&pay_id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '1476'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=27fb667imcas63p882ptknkr63'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500856314.525
+    'REQUEST_TIME' => 1500856314
+]
+2017-07-24 08:45:02 [127.0.0.1][-][27fb667imcas63p882ptknkr63][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: pays' in F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay_method.php:41
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\frontend\views\pay\pay_method.php(41): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'F:\\WWW\\2017_7\\y...', 41, Array)
+#1 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(330): require('F:\\WWW\\2017_7\\y...')
+#2 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('F:\\WWW\\2017_7\\y...', Array)
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('F:\\WWW\\2017_7\\y...', Array, Object(frontend\controllers\PayController))
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('pay_method.php', Array, Object(frontend\controllers\PayController))
+#5 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(85): yii\base\Controller->renderPartial('pay_method.php')
+#6 [internal function]: frontend\controllers\PayController->actionPay_method()
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('pay_method', Array)
+#10 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('pay/pay_method', Array)
+#11 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-07-24 08:45:02 [127.0.0.1][-][27fb667imcas63p882ptknkr63][info][application] $_GET = [
+    'r' => 'pay/pay_method'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '27fb667imcas63p882ptknkr63'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1984'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_method'
+    'QUERY_STRING' => 'r=pay/pay_method'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '1638'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=27fb667imcas63p882ptknkr63'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500857102.3291
+    'REQUEST_TIME' => 1500857102
+]
+2017-07-24 08:49:14 [127.0.0.1][-][27fb667imcas63p882ptknkr63][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'field list'' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php:959
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(959): PDOStatement->execute()
+#1 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(90): yii\db\Command->execute()
+#2 [internal function]: frontend\controllers\PayController->actionMethod_add()
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'field list'
+The SQL being executed was: INSERT INTO `pay_method` (`pay_name`, `user_id`) VALUES ('财付�\�', '1')' in F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Schema.php:592
+Stack trace:
+#0 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\db\Command.php(969): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `pa...')
+#1 F:\WWW\2017_7\yii\yii2\frontend\controllers\PayController.php(90): yii\db\Command->execute()
+#2 [internal function]: frontend\controllers\PayController->actionMethod_add()
+#3 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#4 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#5 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#6 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#7 F:\WWW\2017_7\yii\yii2\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 F:\WWW\2017_7\yii\yii2\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'user_id' in 'field list'
+)
+
+2017-07-24 08:49:14 [127.0.0.1][-][27fb667imcas63p882ptknkr63][info][application] $_GET = [
+    'r' => 'pay/method_add'
+]
+
+$_POST = [
+    'pay_name' => '财付通'
+    'user_id' => '1'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '27fb667imcas63p882ptknkr63'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows7Master;D:\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Git\\cmd;F:\\phpStudy\\php56n;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1996'
+    'SCRIPT_NAME' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_URI' => '/2017_7/yii/yii2/frontend/web/index.php?r=pay/method_add'
+    'QUERY_STRING' => 'r=pay/method_add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '1655'
+    'SCRIPT_FILENAME' => 'F:/WWW/2017_7/yii/yii2/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/WWW'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-frontend=27fb667imcas63p882ptknkr63'
+    'HTTP_REFERER' => 'http://localhost/2017_7/yii/yii2/frontend/web/index.php?r=pay/pay_method'
+    'CONTENT_LENGTH' => '252'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=---------------------------15694398923223'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/2017_7/yii/yii2/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1500857354.2055
+    'REQUEST_TIME' => 1500857354
+]

@@ -59,6 +59,7 @@
                 </tr>
                 </tbody></table>
                 <input type="hidden" name="id" value="<?php echo $info['id'];?>" />
+                <input type="hidden" name="user_id" value="<?php echo $info['user_id'];?>" />
             <div class="button-div">
                 <input type="submit" value=" 确定 " class="button" >
                 <input type="reset" value=" 重置 " class="button">

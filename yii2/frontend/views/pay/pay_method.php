@@ -30,35 +30,17 @@
 
     <!-- tab body -->
     <div id="tabbody-div">
-     <form enctype="multipart/form-data" action="index.php?r=pay/pay_add" method="post">
+     <form enctype="multipart/form-data" action="index.php?r=pay/method_add" method="post">
 
             <table width="90%" id="general-table" align="center" style="display: table;">
                 <tbody>
                 <tr>
                     <td class="label">支付方式：</td>
                     <td>
-                        <div>
-                           <?php foreach ($pays as $key => $value) {?>
-                           <input type="radio" name="pay_id" value="<?php echo $value['pay_id']?>"  checked/>
-                               <?php echo $value['pay_name']?>
-                           <?php }?>
-                        <br>
-
-                        </div>
-                    </td>
-                </tr>
-<tr>
-                    <td class="label">支付金额：</td>
-                    <td>
-                        <div>
-                          <input type="text" name="pay_price" />
-                        <br>
-                    
-                        </div>
+                    <input type="text" name="pay_name" />     
                     </td>
                 </tr>
                 </tbody></table>
-                <input type="hidden" name="user_id" value="1" />
             <div class="button-div">
                 <input type="submit" value=" 确定 " class="button" >
                 <input type="reset" value=" 重置 " class="button">
