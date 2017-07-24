@@ -1,0 +1,211 @@
+a:11:{s:6:"config";a:5:{s:10:"phpVersion";s:5:"5.6.1";s:10:"yiiVersion";s:10:"2.0.13-dev";s:11:"application";a:8:{s:3:"yii";s:10:"2.0.13-dev";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:5:"5.6.1";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:5:{s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:52:"F:\WWW\2017_7\yii\yii2\vendor/yiisoft/yii2-bootstrap";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:54:"F:\WWW\2017_7\yii\yii2\vendor/yiisoft/yii2-swiftmailer";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:10:"@yii/debug";s:48:"F:\WWW\2017_7\yii\yii2\vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:8:"@yii/gii";s:46:"F:\WWW\2017_7\yii\yii2\vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:10:"@yii/faker";s:48:"F:\WWW\2017_7\yii\yii2\vendor/yiisoft/yii2-faker";}}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:302;s:14:"requestHeaders";a:10:{s:25:"upgrade-insecure-requests";s:1:"1";s:10:"connection";s:5:"close";s:7:"referer";s:72:"http://localhost/2017_7/yii/yii2/backend/web/index.php?r=goods/goods_add";s:14:"content-length";s:6:"291992";s:12:"content-type";s:72:"multipart/form-data; boundary=---------------------------135763032716955";s:15:"accept-encoding";s:13:"gzip, deflate";s:15:"accept-language";s:35:"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3";s:6:"accept";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:10:"user-agent";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:4:"host";s:9:"localhost";}s:15:"responseHeaders";a:3:{s:12:"X-Powered-By";s:9:"PHP/5.6.1";s:8:"Location";s:11:"goods/goods";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:15:"goods/add_goods";s:6:"action";s:54:"backend\controllers\GoodsController::actionAdd_goods()";s:12:"actionParams";a:0:{}s:11:"requestBody";a:0:{}s:6:"SERVER";a:42:{s:4:"PATH";s:298:"C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows7Master;D:\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;F:\phpStudy\php56n;C:\ProgramData\ComposerSetup\bin;C:\Users\Administrator\AppData\Roaming\Composer\vendor\bin";s:10:"SYSTEMROOT";s:10:"C:\Windows";s:7:"COMSPEC";s:27:"C:\Windows\system32\cmd.exe";s:7:"PATHEXT";s:53:".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC";s:6:"WINDIR";s:10:"C:\Windows";s:21:"PHP_FCGI_MAX_REQUESTS";s:4:"1000";s:5:"PHPRC";s:18:"F:/phpStudy/php56n";s:21:"_FCGI_SHUTDOWN_EVENT_";s:4:"1884";s:11:"SCRIPT_NAME";s:38:"/2017_7/yii/yii2/backend/web/index.php";s:11:"REQUEST_URI";s:56:"/2017_7/yii/yii2/backend/web/index.php?r=goods/add_goods";s:12:"QUERY_STRING";s:17:"r=goods/add_goods";s:14:"REQUEST_METHOD";s:4:"POST";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:11:"REMOTE_PORT";s:4:"2732";s:15:"SCRIPT_FILENAME";s:44:"F:/WWW/2017_7/yii/yii2/backend/web/index.php";s:12:"SERVER_ADMIN";s:18:"admin@phpStudy.net";s:21:"CONTEXT_DOCUMENT_ROOT";s:6:"F:/WWW";s:14:"CONTEXT_PREFIX";s:0:"";s:14:"REQUEST_SCHEME";s:4:"http";s:13:"DOCUMENT_ROOT";s:6:"F:/WWW";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:11:"SERVER_PORT";s:2:"80";s:11:"SERVER_ADDR";s:9:"127.0.0.1";s:11:"SERVER_NAME";s:9:"localhost";s:15:"SERVER_SOFTWARE";s:52:"Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9";s:16:"SERVER_SIGNATURE";s:0:"";s:10:"SystemRoot";s:10:"C:\Windows";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:15:"HTTP_CONNECTION";s:5:"close";s:12:"HTTP_REFERER";s:72:"http://localhost/2017_7/yii/yii2/backend/web/index.php?r=goods/goods_add";s:14:"CONTENT_LENGTH";s:6:"291992";s:12:"CONTENT_TYPE";s:72:"multipart/form-data; boundary=---------------------------135763032716955";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:20:"HTTP_ACCEPT_LANGUAGE";s:35:"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:15:"HTTP_USER_AGENT";s:72:"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0";s:9:"HTTP_HOST";s:9:"localhost";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:8:"PHP_SELF";s:38:"/2017_7/yii/yii2/backend/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1500553989.8635371;s:12:"REQUEST_TIME";i:1500553989;}s:3:"GET";a:1:{s:1:"r";s:15:"goods/add_goods";}s:4:"POST";a:12:{s:10:"goods_name";s:12:"诺基亚N85";s:8:"goods_sn";s:9:"ECS000036";s:6:"cat_id";s:1:"1";s:8:"brand_id";s:1:"1";s:10:"shop_price";s:7:"3010.00";s:12:"goods_number";s:1:"4";s:10:"is_on_sale";s:1:"1";s:10:"goods_type";s:1:"1";s:13:"attr_value_id";a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}s:15:"attr_value_list";a:3:{i:0;s:15:"红色，黑色";i:1;s:9:"16G，32G";i:2;s:15:"移动，联通";}s:8:"img_desc";a:1:{i:0;s:0:"";}s:10:"goods_desc";s:18:"<p>哈哈<br/></p>";}s:6:"COOKIE";a:0:{}s:5:"FILES";a:2:{s:9:"goods_img";a:5:{s:4:"name";s:26:"1412106_135131406000_2.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:22:"C:\Windows\phpCA23.tmp";s:5:"error";i:0;s:4:"size";i:165793;}s:7:"img_url";a:5:{s:4:"name";a:1:{i:0;s:36:"B1E49018D728DEA7229B0588C460AE61.JPG";}s:4:"type";a:1:{i:0;s:10:"image/jpeg";}s:8:"tmp_name";a:1:{i:0;s:22:"C:\Windows\phpCA24.tmp";}s:5:"error";a:1:{i:0;i:0;}s:4:"size";a:1:{i:0;i:124072;}}}s:7:"SESSION";a:0:{}}s:3:"log";a:1:{s:8:"messages";a:19:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1500553989.988544;i:4;a:0:{}i:5;i:1646128;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1500553989.988544;i:4;a:0:{}i:5;i:1647992;}i:2;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1500553989.997545;i:4;a:0:{}i:5;i:2236608;}i:3;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1500553989.9985449;i:4;a:0:{}i:5;i:2335448;}i:4;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1500553989.9985449;i:4;a:0:{}i:5;i:2370000;}i:6;a:6:{i:0;s:34:"Route requested: 'goods/add_goods'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1500553990.001545;i:4;a:0:{}i:5;i:2609336;}i:7;a:6:{i:0;s:29:"Route to run: goods/add_goods";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1500553990.004545;i:4;a:0:{}i:5;i:2785528;}i:8;a:6:{i:0;s:70:"Running action: backend\controllers\GoodsController::actionAdd_goods()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1500553990.004545;i:4;a:0:{}i:5;i:2795872;}i:9;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `goods`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.194556;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4131408;}i:10;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=myshop";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1500553990.194556;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4136272;}i:15;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods' AND kcu.table_name = 'goods'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.2285581;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4175208;}i:18;a:6:{i:0;s:283:"INSERT INTO `goods` (`goods_img`, `goods_name`, `goods_sn`, `category_id`, `brand_id`, `goods_price`, `is_on_sale`, `goods_number`, `goods_desc`) VALUES ('uploads/1412106_135131406000_2.jpg', '诺基亚N85', 'ECS000036', 1, 1, '3010.00', 1, 4, '&lt;p&gt;哈哈&lt;br/&gt;&lt;/p&gt;')";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.2305579;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4176336;}i:21;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `images`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.314563;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4184536;}i:24;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'images' AND kcu.table_name = 'images'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.324564;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4194024;}i:27;a:6:{i:0;s:118:"INSERT INTO `images` (`m_path`, `goods_id`, `img_desc`) VALUES ('uploads/B1E49018D728DEA7229B0588C460AE61.JPG', 3, '')";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.327564;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4192656;}i:30;a:6:{i:0;s:47:"UPDATE `goods` SET `images_id`='4' WHERE id = 3";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.3795669;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:127;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4196544;}i:33;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `goods_attr`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.4695721;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4208512;}i:36;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods_attr' AND kcu.table_name = 'goods_attr'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.477572;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4217976;}i:39;a:6:{i:0;s:159:"INSERT INTO `goods_attr` (`attr_id`, `goods_id`, `attr_values`) VALUES ('1', '3', '红色，黑�\�'), ('2', '3', '16G�\�32G'), ('3', '3', '移动，联�\�')";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.4805729;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4215064;}}}s:9:"profiling";a:3:{s:6:"memory";i:4296512;s:4:"time";d:0.56203198432922363;s:8:"messages";a:22:{i:11;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=myshop";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1500553990.194556;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4137752;}i:12;a:6:{i:0;s:57:"Opening DB connection: mysql:host=localhost;dbname=myshop";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1500553990.2055571;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4146328;}i:13;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `goods`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.2055571;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4145184;}i:14;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `goods`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.226558;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4163520;}i:16;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods' AND kcu.table_name = 'goods'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.2285581;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4177488;}i:17;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods' AND kcu.table_name = 'goods'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.229558;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4179288;}i:19;a:6:{i:0;s:283:"INSERT INTO `goods` (`goods_img`, `goods_name`, `goods_sn`, `category_id`, `brand_id`, `goods_price`, `is_on_sale`, `goods_number`, `goods_desc`) VALUES ('uploads/1412106_135131406000_2.jpg', '诺基亚N85', 'ECS000036', 1, 1, '3010.00', 1, 4, '&lt;p&gt;哈哈&lt;br/&gt;&lt;/p&gt;')";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.2305579;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4176904;}i:20;a:6:{i:0;s:283:"INSERT INTO `goods` (`goods_img`, `goods_name`, `goods_sn`, `category_id`, `brand_id`, `goods_price`, `is_on_sale`, `goods_number`, `goods_desc`) VALUES ('uploads/1412106_135131406000_2.jpg', '诺基亚N85', 'ECS000036', 1, 1, '3010.00', 1, 4, '&lt;p&gt;哈哈&lt;br/&gt;&lt;/p&gt;')";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.314563;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4178392;}i:22;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `images`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.314563;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4185728;}i:23;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `images`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.3235641;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4192264;}i:25;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'images' AND kcu.table_name = 'images'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.3255639;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4196304;}i:26;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'images' AND kcu.table_name = 'images'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.327564;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4198728;}i:28;a:6:{i:0;s:118:"INSERT INTO `images` (`m_path`, `goods_id`, `img_desc`) VALUES ('uploads/B1E49018D728DEA7229B0588C460AE61.JPG', 3, '')";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.327564;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4193680;}i:29;a:6:{i:0;s:118:"INSERT INTO `images` (`m_path`, `goods_id`, `img_desc`) VALUES ('uploads/B1E49018D728DEA7229B0588C460AE61.JPG', 3, '')";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.3765669;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4195168;}i:31;a:6:{i:0;s:47:"UPDATE `goods` SET `images_id`='4' WHERE id = 3";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.3795669;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:127;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4197720;}i:32;a:6:{i:0;s:47:"UPDATE `goods` SET `images_id`='4' WHERE id = 3";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.4685719;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:127;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4199264;}i:34;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `goods_attr`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.4695721;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4209728;}i:35;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `goods_attr`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.476572;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4216208;}i:37;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods_attr' AND kcu.table_name = 'goods_attr'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.477572;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4220280;}i:38;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods_attr' AND kcu.table_name = 'goods_attr'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.4805729;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4222024;}i:40;a:6:{i:0;s:159:"INSERT INTO `goods_attr` (`attr_id`, `goods_id`, `attr_values`) VALUES ('1', '3', '红色，黑�\�'), ('2', '3', '16G�\�32G'), ('3', '3', '移动，联�\�')";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.4805729;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4216480;}i:41;a:6:{i:0;s:159:"INSERT INTO `goods_attr` (`attr_id`, `goods_id`, `attr_values`) VALUES ('1', '3', '红色，黑�\�'), ('2', '3', '16G�\�32G'), ('3', '3', '移动，联�\�')";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.5255749;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4218024;}}}s:2:"db";a:1:{s:8:"messages";a:20:{i:13;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `goods`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.2055571;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4145184;}i:14;a:6:{i:0;s:30:"SHOW FULL COLUMNS FROM `goods`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.226558;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4163520;}i:16;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods' AND kcu.table_name = 'goods'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.2285581;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4177488;}i:17;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods' AND kcu.table_name = 'goods'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.229558;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4179288;}i:19;a:6:{i:0;s:283:"INSERT INTO `goods` (`goods_img`, `goods_name`, `goods_sn`, `category_id`, `brand_id`, `goods_price`, `is_on_sale`, `goods_number`, `goods_desc`) VALUES ('uploads/1412106_135131406000_2.jpg', '诺基亚N85', 'ECS000036', 1, 1, '3010.00', 1, 4, '&lt;p&gt;哈哈&lt;br/&gt;&lt;/p&gt;')";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.2305579;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4176904;}i:20;a:6:{i:0;s:283:"INSERT INTO `goods` (`goods_img`, `goods_name`, `goods_sn`, `category_id`, `brand_id`, `goods_price`, `is_on_sale`, `goods_number`, `goods_desc`) VALUES ('uploads/1412106_135131406000_2.jpg', '诺基亚N85', 'ECS000036', 1, 1, '3010.00', 1, 4, '&lt;p&gt;哈哈&lt;br/&gt;&lt;/p&gt;')";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.314563;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:108;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4178392;}i:22;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `images`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.314563;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4185728;}i:23;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `images`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.3235641;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4192264;}i:25;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'images' AND kcu.table_name = 'images'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.3255639;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4196304;}i:26;a:6:{i:0;s:613:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'images' AND kcu.table_name = 'images'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.327564;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:6:"insert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4198728;}i:28;a:6:{i:0;s:118:"INSERT INTO `images` (`m_path`, `goods_id`, `img_desc`) VALUES ('uploads/B1E49018D728DEA7229B0588C460AE61.JPG', 3, '')";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.327564;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4193680;}i:29;a:6:{i:0;s:118:"INSERT INTO `images` (`m_path`, `goods_id`, `img_desc`) VALUES ('uploads/B1E49018D728DEA7229B0588C460AE61.JPG', 3, '')";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.3765669;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:122;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4195168;}i:31;a:6:{i:0;s:47:"UPDATE `goods` SET `images_id`='4' WHERE id = 3";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.3795669;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:127;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4197720;}i:32;a:6:{i:0;s:47:"UPDATE `goods` SET `images_id`='4' WHERE id = 3";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.4685719;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:127;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4199264;}i:34;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `goods_attr`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.4695721;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4209728;}i:35;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `goods_attr`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.476572;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4216208;}i:37;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods_attr' AND kcu.table_name = 'goods_attr'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.477572;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4220280;}i:38;a:6:{i:0;s:621:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'goods_attr' AND kcu.table_name = 'goods_attr'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1500553990.4805729;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:11:"batchInsert";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4222024;}i:40;a:6:{i:0;s:159:"INSERT INTO `goods_attr` (`attr_id`, `goods_id`, `attr_values`) VALUES ('1', '3', '红色，黑�\�'), ('2', '3', '16G�\�32G'), ('3', '3', '移动，联�\�')";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.4805729;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4216480;}i:41;a:6:{i:0;s:159:"INSERT INTO `goods_attr` (`attr_id`, `goods_id`, `attr_values`) VALUES ('1', '3', '红色，黑�\�'), ('2', '3', '16G�\�32G'), ('3', '3', '移动，联�\�')";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1500553990.5255749;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"F:\WWW\2017_7\yii\yii2\backend\controllers\GoodsController.php";s:4:"line";i:140;s:8:"function";s:7:"execute";s:5:"class";s:14:"yii\db\Command";s:4:"type";s:2:"->";}}i:5;i:4218024;}}}s:6:"assets";a:0:{}s:4:"mail";a:0:{}s:8:"timeline";a:3:{s:5:"start";d:1500553989.974544;s:3:"end";d:1500553990.5395761;s:6:"memory";i:4296512;}s:4:"user";N;s:6:"router";a:1:{s:8:"messages";a:1:{i:5;a:6:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1500553990.001545;i:4;a:0:{}i:5;i:2609808;}}}s:7:"summary";a:9:{s:3:"tag";s:13:"5970a305f38a9";s:3:"url";s:72:"http://localhost/2017_7/yii/yii2/backend/web/index.php?r=goods/add_goods";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1500553989.8635371;s:10:"statusCode";i:302;s:8:"sqlCount";i:10;s:9:"mailCount";i:0;}}

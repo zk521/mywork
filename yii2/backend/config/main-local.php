@@ -6,6 +6,13 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'CZlttFH_SG0bA10VI4_SVYR5r_XGQ856',
         ],
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=myshop',
+            'username' => 'root',
+            'password' => 'root',
+            'charset' => 'utf8',
+        ],
     ],
 ];
 

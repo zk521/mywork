@@ -4,7 +4,7 @@ namespace frontend\controllers;
 use yii;
 use db;
 use yii\web\controller;
-class OrderController extends controller
+class OrderController extends Commoncontroller
 {
 	// 展示订单页面
 	public function actionIndex(){
