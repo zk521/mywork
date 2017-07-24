@@ -66,15 +66,16 @@
 			'url':'?r=login/check_login',
 			'type':'post',
               	success:function(msg){
+//			    alert(msg);
                 if(msg == 2)
                 {
                     $('#enter2').parent().html('<input type="text" name="pwd" value="密码不正确" style="color:red;" required="required" class="enter2">');
-                    
+
                      $('.enter2').click(function()
                     {
-                        
+
                        $(this).parent().html('<img class="img1" src="img/logPwd.png" /><input type="password" class="pwd" name="pwd" placeholder="输入用户密码" /id="enter2">');
-                      
+
                     })
                 }
                 else

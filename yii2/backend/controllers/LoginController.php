@@ -29,13 +29,14 @@ class LoginController extends Controller
 	//判断登录
 	public  function actionCheck_login()
 	{
-		
+
 		$username = yii::$app->request->post('username');
 		$pwd = yii::$app->request->post('pwd');
 		$index = yii::$app->request->post('index');
 		//通过用户选择的登录方式查库
 		$db = yii::$app->db;
 		$result = $db->createCommand("select * from admin where $index='$username'")->queryOne();
+//        print_r($result);
 		
 		if($result["$index"] == $username)
 		{

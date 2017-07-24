@@ -60,7 +60,7 @@
 							<td><?=$v['region_name']?></td>
 							<td><?=$v['tel']?></td>
 							<td><?=$v['tel']?></td>
-							<td><?=$v['status']?></td>
+							<td><?=$v['is_audit']?></td>
 							
 							
 							<td><a href="connoisseuradd.html"><img class="operation"
